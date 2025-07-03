@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboardScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Greeting Text -->
+        <TextView
+            android:id="@+id/GreetingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👋 Welcome, user"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <!-- Stats Section -->
+        <TextView
+            android:id="@+id/textStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading stats..."
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#ECECEC"
+            android:layout_marginBottom="16dp"
+            android:minHeight="60dp"/>
+
+        <!-- Personalized Experiences -->
+        <TextView
+            android:id="@+id/personalizedExpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalized experience appears here."
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#F0FFF0"
+            android:layout_marginBottom="16dp"
+            android:minHeight="80dp"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnRefreshData"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Refresh Data"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnClearData"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Clear Data"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnOpenQuiz"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Open Quiz"
+                android:onClick="openQuiz" />
+        </LinearLayout>
+
+        <!-- Add extra spacing -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Button for user input (optional) -->
+        <Button
+            android:id="@+id/btnUserInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter User Data"
+            android:onClick="buttonInput" />
+    </LinearLayout>
+</ScrollView>

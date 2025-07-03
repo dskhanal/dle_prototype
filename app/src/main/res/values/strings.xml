@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DLE Prototype</string>
+
+    <!-- MainActivity -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- Dashboard -->
+    <string name="welcome">Welcome</string>
+    <string name="take_quiz">Take Quiz</string>
+    <string name="edit_dle_data">Edit DLE Data</string>
+    <string name="welcome_message">Welcome, %1$s</string>
+
+    <!-- User Input -->
+    <string name="save_data">Save Data</string>
+    <string name="retrain_model">Retrain Model</string>
+    <string name="export_weights">Export Weights (Scoped Storage)</string>
+    <string name="load_weights">Load Weights from Prefs</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="input_data">Input Data</string>
+    <string name="login_frequency">Login Frequency</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="quiz_score">Quiz Score</string>
+    <string name="difficulty_reached">Difficulty Reached</string>
+    <string name="submit">Submit</string>
+</resources>
+

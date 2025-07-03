@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fafd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:background="#f8fafd">
+
+        <!-- Category Selection Prompt -->
+        <TextView
+            android:id="@+id/categoryPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a Category"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Category Buttons (wrap for easy hide) -->
+        <LinearLayout
+            android:id="@+id/categoryButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnCategoryHTML"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="HTML"
+                android:textColor="#fff"
+                android:backgroundTint="#1e88e5"
+                android:layout_marginEnd="8dp"
+                android:elevation="3dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryCSS"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="CSS"
+                android:textColor="#fff"
+                android:backgroundTint="#43a047"
+                android:layout_marginEnd="8dp"
+                android:elevation="3dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryJS"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="JavaScript"
+                android:textColor="#fff"
+                android:backgroundTint="#ffa000"
+                android:elevation="3dp"/>
+        </LinearLayout>
+
+        <!-- Quiz Content (hidden until category selected) -->
+        <LinearLayout
+            android:id="@+id/quizContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="#ffffff"
+            android:elevation="3dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/questionCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 of 10"
+                android:textSize="15sp"
+                android:textColor="#1976d2"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/metaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category: HTML | Difficulty: Easy"
+                android:textSize="15sp"
+                android:textColor="#888"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question goes here"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#222"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/explanationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#388e3c"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/buttonTrue"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="True"
+                    android:textColor="#fff"
+                    android:backgroundTint="#388e3c"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="2dp"/>
+
+                <Button
+                    android:id="@+id/buttonFalse"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="False"
+                    android:textColor="#fff"
+                    android:backgroundTint="#d32f2f"
+                    android:elevation="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

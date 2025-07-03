@@ -1,0 +1,702 @@
+[
+  {
+    "question": "The <p> tag is used to embed videos.",
+    "answer": false,
+    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "You must always close all HTML tags.",
+    "answer": false,
+    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <style> tag is used for CSS.",
+    "answer": true,
+    "explanation": "<style> embeds CSS in an HTML document.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS Grid is a layout system.",
+    "answer": true,
+    "explanation": "CSS Grid provides a two-dimensional layout system.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<div> is used to create containers in HTML.",
+    "answer": true,
+    "explanation": "<div> defines divisions or sections in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <br> tag adds a line break.",
+    "answer": true,
+    "explanation": "<br> inserts a line break in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS can be used to animate elements.",
+    "answer": true,
+    "explanation": "CSS animations allow movement and transitions without JavaScript.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "'let' declares a block-scoped variable in JS.",
+    "answer": true,
+    "explanation": "'let' is used for block-scoped variable declarations.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Computer Style Sheets.",
+    "answer": false,
+    "explanation": "CSS stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<div> is used to create containers in HTML.",
+    "answer": true,
+    "explanation": "<div> defines divisions or sections in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS selectors target HTML elements.",
+    "answer": true,
+    "explanation": "Selectors apply styles to specific HTML elements.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS selectors target HTML elements.",
+    "answer": true,
+    "explanation": "Selectors apply styles to specific HTML elements.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <p> tag is used to embed videos.",
+    "answer": false,
+    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is the same as Java.",
+    "answer": false,
+    "explanation": "Despite the name, JavaScript is a different language than Java.",
+    "category": "JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <br> tag adds a line break.",
+    "answer": true,
+    "explanation": "<br> inserts a line break in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "'let' declares a block-scoped variable in JS.",
+    "answer": true,
+    "explanation": "'let' is used for block-scoped variable declarations.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS Grid is a layout system.",
+    "answer": true,
+    "explanation": "CSS Grid provides a two-dimensional layout system.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is the same as Java.",
+    "answer": false,
+    "explanation": "Despite the name, JavaScript is a different language than Java.",
+    "category": "JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS stands for Computer Style Sheets.",
+    "answer": false,
+    "explanation": "CSS stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript supports object-oriented programming.",
+    "answer": true,
+    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "HTML5 introduced the <article> element.",
+    "answer": true,
+    "explanation": "<article> is used for self-contained content.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is statically typed.",
+    "answer": false,
+    "explanation": "JavaScript is dynamically typed.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "You must always close all HTML tags.",
+    "answer": false,
+    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript is the same as Java.",
+    "answer": false,
+    "explanation": "Despite the name, JavaScript is a different language than Java.",
+    "category": "JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS Grid is a layout system.",
+    "answer": true,
+    "explanation": "CSS Grid provides a two-dimensional layout system.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Computer Style Sheets.",
+    "answer": false,
+    "explanation": "CSS stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <style> tag is used for CSS.",
+    "answer": true,
+    "explanation": "<style> embeds CSS in an HTML document.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS stands for Computer Style Sheets.",
+    "answer": false,
+    "explanation": "CSS stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS stands for Creative Style Sheets.",
+    "answer": false,
+    "explanation": "CSS actually stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript is statically typed.",
+    "answer": false,
+    "explanation": "JavaScript is dynamically typed.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is statically typed.",
+    "answer": false,
+    "explanation": "JavaScript is dynamically typed.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript supports object-oriented programming.",
+    "answer": true,
+    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<img> requires an 'alt' attribute for accessibility.",
+    "answer": true,
+    "explanation": "'alt' provides alternative text for screen readers.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <br> tag adds a line break.",
+    "answer": true,
+    "explanation": "<br> inserts a line break in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "HTML5 introduced the <article> element.",
+    "answer": true,
+    "explanation": "<article> is used for self-contained content.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<img> requires an 'alt' attribute for accessibility.",
+    "answer": true,
+    "explanation": "'alt' provides alternative text for screen readers.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS stands for Creative Style Sheets.",
+    "answer": false,
+    "explanation": "CSS actually stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<div> is used to create containers in HTML.",
+    "answer": true,
+    "explanation": "<div> defines divisions or sections in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "'let' declares a block-scoped variable in JS.",
+    "answer": true,
+    "explanation": "'let' is used for block-scoped variable declarations.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "HTML5 introduced the <article> element.",
+    "answer": true,
+    "explanation": "<article> is used for self-contained content.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "HTML stands for Hyper Text Markup Language.",
+    "answer": true,
+    "explanation": "HTML is the standard markup language for web documents.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<img> requires an 'alt' attribute for accessibility.",
+    "answer": true,
+    "explanation": "'alt' provides alternative text for screen readers.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript can manipulate the DOM.",
+    "answer": true,
+    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<img> requires an 'alt' attribute for accessibility.",
+    "answer": true,
+    "explanation": "'alt' provides alternative text for screen readers.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript is the same as Java.",
+    "answer": false,
+    "explanation": "Despite the name, JavaScript is a different language than Java.",
+    "category": "JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Flexbox allows 2D layout control.",
+    "answer": false,
+    "explanation": "Flexbox allows only 1D layout (row or column).",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is the same as Java.",
+    "answer": false,
+    "explanation": "Despite the name, JavaScript is a different language than Java.",
+    "category": "JavaScript",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<div> is used to create containers in HTML.",
+    "answer": true,
+    "explanation": "<div> defines divisions or sections in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript can manipulate the DOM.",
+    "answer": true,
+    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS can be used to animate elements.",
+    "answer": true,
+    "explanation": "CSS animations allow movement and transitions without JavaScript.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS selectors target HTML elements.",
+    "answer": true,
+    "explanation": "Selectors apply styles to specific HTML elements.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <br> tag adds a line break.",
+    "answer": true,
+    "explanation": "<br> inserts a line break in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS can be used to animate elements.",
+    "answer": true,
+    "explanation": "CSS animations allow movement and transitions without JavaScript.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The <style> tag is used for CSS.",
+    "answer": true,
+    "explanation": "<style> embeds CSS in an HTML document.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <br> tag adds a line break.",
+    "answer": true,
+    "explanation": "<br> inserts a line break in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript is statically typed.",
+    "answer": false,
+    "explanation": "JavaScript is dynamically typed.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS Grid is a layout system.",
+    "answer": true,
+    "explanation": "CSS Grid provides a two-dimensional layout system.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "'let' declares a block-scoped variable in JS.",
+    "answer": true,
+    "explanation": "'let' is used for block-scoped variable declarations.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS selectors target HTML elements.",
+    "answer": true,
+    "explanation": "Selectors apply styles to specific HTML elements.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Flexbox allows 2D layout control.",
+    "answer": false,
+    "explanation": "Flexbox allows only 1D layout (row or column).",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<head> contains metadata for the document.",
+    "answer": true,
+    "explanation": "The <head> tag contains meta tags, links, and title.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "HTML5 introduced the <article> element.",
+    "answer": true,
+    "explanation": "<article> is used for self-contained content.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript can manipulate the DOM.",
+    "answer": true,
+    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript is statically typed.",
+    "answer": false,
+    "explanation": "JavaScript is dynamically typed.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<head> contains metadata for the document.",
+    "answer": true,
+    "explanation": "The <head> tag contains meta tags, links, and title.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "HTML stands for Hyper Text Markup Language.",
+    "answer": true,
+    "explanation": "HTML is the standard markup language for web documents.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript can manipulate the DOM.",
+    "answer": true,
+    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "HTML5 introduced the <article> element.",
+    "answer": true,
+    "explanation": "<article> is used for self-contained content.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The <style> tag is used for CSS.",
+    "answer": true,
+    "explanation": "<style> embeds CSS in an HTML document.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <p> tag is used to embed videos.",
+    "answer": false,
+    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "You must always close all HTML tags.",
+    "answer": false,
+    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "HTML stands for Hyper Text Markup Language.",
+    "answer": true,
+    "explanation": "HTML is the standard markup language for web documents.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript supports object-oriented programming.",
+    "answer": true,
+    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Creative Style Sheets.",
+    "answer": false,
+    "explanation": "CSS actually stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS can be used to animate elements.",
+    "answer": true,
+    "explanation": "CSS animations allow movement and transitions without JavaScript.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "'let' declares a block-scoped variable in JS.",
+    "answer": true,
+    "explanation": "'let' is used for block-scoped variable declarations.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Computer Style Sheets.",
+    "answer": false,
+    "explanation": "CSS stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS can be used to animate elements.",
+    "answer": true,
+    "explanation": "CSS animations allow movement and transitions without JavaScript.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<head> contains metadata for the document.",
+    "answer": true,
+    "explanation": "The <head> tag contains meta tags, links, and title.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS Grid is a layout system.",
+    "answer": true,
+    "explanation": "CSS Grid provides a two-dimensional layout system.",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Flexbox allows 2D layout control.",
+    "answer": false,
+    "explanation": "Flexbox allows only 1D layout (row or column).",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Creative Style Sheets.",
+    "answer": false,
+    "explanation": "CSS actually stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "HTML stands for Hyper Text Markup Language.",
+    "answer": true,
+    "explanation": "HTML is the standard markup language for web documents.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "You must always close all HTML tags.",
+    "answer": false,
+    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript supports object-oriented programming.",
+    "answer": true,
+    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "CSS stands for Creative Style Sheets.",
+    "answer": false,
+    "explanation": "CSS actually stands for Cascading Style Sheets.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "You must always close all HTML tags.",
+    "answer": false,
+    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "CSS selectors target HTML elements.",
+    "answer": true,
+    "explanation": "Selectors apply styles to specific HTML elements.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The <p> tag is used to embed videos.",
+    "answer": false,
+    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "JavaScript supports object-oriented programming.",
+    "answer": true,
+    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "HTML stands for Hyper Text Markup Language.",
+    "answer": true,
+    "explanation": "HTML is the standard markup language for web documents.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<head> contains metadata for the document.",
+    "answer": true,
+    "explanation": "The <head> tag contains meta tags, links, and title.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "<img> requires an 'alt' attribute for accessibility.",
+    "answer": true,
+    "explanation": "'alt' provides alternative text for screen readers.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Flexbox allows 2D layout control.",
+    "answer": false,
+    "explanation": "Flexbox allows only 1D layout (row or column).",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The <style> tag is used for CSS.",
+    "answer": true,
+    "explanation": "<style> embeds CSS in an HTML document.",
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Flexbox allows 2D layout control.",
+    "answer": false,
+    "explanation": "Flexbox allows only 1D layout (row or column).",
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The <p> tag is used to embed videos.",
+    "answer": false,
+    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<div> is used to create containers in HTML.",
+    "answer": true,
+    "explanation": "<div> defines divisions or sections in HTML.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "JavaScript can manipulate the DOM.",
+    "answer": true,
+    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "category": "JavaScript",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "<head> contains metadata for the document.",
+    "answer": true,
+    "explanation": "The <head> tag contains meta tags, links, and title.",
+    "category": "HTML",
+    "difficulty": "Easy"
+  }
+]

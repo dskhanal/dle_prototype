@@ -1,0 +1,11 @@
+toml
+[versions]
+# ... other versions
+tensorflowLite = "+" # Or a specific version like "2.15.0"
+
+[libraries]
+# ... other libraries
+tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
+
+[plugins]
+# ... plugins
