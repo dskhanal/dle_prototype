@@ -6,6 +6,19 @@ import android.content.SharedPreferences;
 public class UserStatsManager {
 
     private static final String PREFS_NAME = "user_stats";
+    private static final String KEY_CURRENT_USERNAME = "current_username";
+
+    // Save username (call after login)
+    public static void setCurrentUsername(Context context, String username) {
+        SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        prefs.edit().putString(KEY_CURRENT_USERNAME, username).apply();
+    }
+
+    // Get current username (returns null if not set)
+    public static String getCurrentUsername(Context context) {
+        SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        return prefs.getString(KEY_CURRENT_USERNAME, null);
+    }
 
     // Save a login event
     public static void recordLogin(Context context) {

@@ -16,9 +16,11 @@ import android.content.Context;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -26,15 +28,15 @@ public class QuizActivity extends AppCompatActivity {
     private int currentIndex = 0;
     private int score = 0;
     private float lastDifficulty = 0f;
-    private float lastCategory = 1f; // default: HTML
+    private float lastCategory = 1f;
     private long startTime;
 
-    private TextView questionView, questionCounter, explanationText, metaText, categoryPrompt;
+    private TextView questionView, questionCounter, explanationText, exampleText, metaText, categoryPrompt;
     private Button buttonTrue, buttonFalse;
-    private Button btnCategoryHTML, btnCategoryCSS, btnCategoryJS;
-    private LinearLayout quizContentLayout, categoryButtonsLayout;
+    private Button btnCategoryHTML, btnCategoryCSS, btnCategoryJS, btnCategoryPHP, btnCategoryMYSQL, btnCategoryPYTHON;
+    private LinearLayout quizContentLayout, categoryButtonsLayout, mcqOptionsLayout;
 
-    private int selectedCategory = 1; // 1=HTML, 2=CSS, 3=JavaScript
+    private int selectedCategory = 1;
     private String selectedCategoryName = "HTML";
     private boolean quizStarted = false;
 
@@ -43,15 +45,16 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        // Get layouts and views
+        // Layout and views
         quizContentLayout = findViewById(R.id.quizContentLayout);
-        quizContentLayout.setVisibility(View.GONE); // Hide quiz UI initially
-
+        quizContentLayout.setVisibility(View.GONE);
         categoryButtonsLayout = findViewById(R.id.categoryButtonsLayout);
+        mcqOptionsLayout = findViewById(R.id.mcqOptionsLayout);
 
         questionView = findViewById(R.id.questionText);
         questionCounter = findViewById(R.id.questionCounter);
         explanationText = findViewById(R.id.explanationText);
+        exampleText = findViewById(R.id.exampleText);
         metaText = findViewById(R.id.metaText);
         buttonTrue = findViewById(R.id.buttonTrue);
         buttonFalse = findViewById(R.id.buttonFalse);
@@ -60,13 +63,17 @@ public class QuizActivity extends AppCompatActivity {
         btnCategoryHTML = findViewById(R.id.btnCategoryHTML);
         btnCategoryCSS = findViewById(R.id.btnCategoryCSS);
         btnCategoryJS = findViewById(R.id.btnCategoryJS);
+        btnCategoryPHP = findViewById(R.id.btnCategoryPHP);
+        btnCategoryMYSQL = findViewById(R.id.btnCategoryMYSQL);
+        btnCategoryPYTHON = findViewById(R.id.btnCategoryPYTHON);
 
-        // Category selection buttons
         btnCategoryHTML.setOnClickListener(v -> selectCategory(1, "HTML"));
         btnCategoryCSS.setOnClickListener(v -> selectCategory(2, "CSS"));
         btnCategoryJS.setOnClickListener(v -> selectCategory(3, "JavaScript"));
+        btnCategoryPHP.setOnClickListener(v -> selectCategory(4, "PHP"));
+        btnCategoryMYSQL.setOnClickListener(v -> selectCategory(5, "MySQL"));
+        btnCategoryPYTHON.setOnClickListener(v -> selectCategory(6, "Python"));
 
-        // Disable quiz controls until category selected
         setQuizControlsEnabled(false);
 
         buttonTrue.setOnClickListener(v -> handleAnswer(true));
@@ -81,10 +88,8 @@ public class QuizActivity extends AppCompatActivity {
         categoryPrompt.setText("Category: " + catName);
         startQuizForCategory(catName);
 
-        // Hide all category buttons after selection
+        // Hide category buttons after category is selected
         categoryButtonsLayout.setVisibility(View.GONE);
-
-        // Show quiz content
         quizContentLayout.setVisibility(View.VISIBLE);
     }
 
@@ -107,60 +112,128 @@ public class QuizActivity extends AppCompatActivity {
         displayNextQuestion();
     }
 
-    // Only quiz True/False buttons are enabled/disabled here
     private void setQuizControlsEnabled(boolean enabled) {
         buttonTrue.setEnabled(enabled);
         buttonFalse.setEnabled(enabled);
+        buttonTrue.setVisibility(enabled ? View.VISIBLE : View.INVISIBLE);
+        buttonFalse.setVisibility(enabled ? View.VISIBLE : View.INVISIBLE);
+        // MCQ buttons handled dynamically
     }
 
     private List<Question> loadQuestionsFromJson(Context context, String categoryFilter) {
         List<Question> list = new ArrayList<>();
         try (InputStream is = context.getAssets().open("questions.json");
-             JsonReader reader = new JsonReader(new InputStreamReader(is, "UTF-8"))) {
+             JsonReader reader = new JsonReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
             reader.beginArray();
+            int total = 0;
             while (reader.hasNext()) {
                 Question q = parseQuestion(reader);
-                if (q.getCategory().equalsIgnoreCase(categoryFilter)) {
+                total++;
+                if (q.getCategory().trim().equalsIgnoreCase(categoryFilter.trim())) {
                     list.add(q);
                 }
             }
             reader.endArray();
+            Toast.makeText(context, "Loaded " + list.size() + " questions for " + categoryFilter + " (from " + total + " total)", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
-            Toast.makeText(context, "Failed to load questions", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "Failed to load questions: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
         return list;
     }
 
     private Question parseQuestion(JsonReader reader) throws Exception {
-        String question = "", explanation = "", category = "", difficulty = "";
-        boolean answer = false;
+        String type = "true_false";
+        String question = "", explanation = "", example = "", category = "", difficulty = "";
+        List<String> options = null;
+        Object answer = null;
 
         reader.beginObject();
         while (reader.hasNext()) {
             switch (reader.nextName()) {
+                case "type": type = reader.nextString(); break;
                 case "question": question = reader.nextString(); break;
-                case "answer": answer = reader.nextBoolean(); break;
+                case "options":
+                    options = new ArrayList<>();
+                    reader.beginArray();
+                    while (reader.hasNext()) {
+                        options.add(reader.nextString());
+                    }
+                    reader.endArray();
+                    break;
+                case "answer":
+                    if ("mcq".equals(type)) {
+                        answer = reader.nextString();
+                    } else {
+                        answer = reader.nextBoolean();
+                    }
+                    break;
                 case "explanation": explanation = reader.nextString(); break;
+                case "example": example = reader.nextString(); break;
                 case "category": category = reader.nextString(); break;
                 case "difficulty": difficulty = reader.nextString(); break;
                 default: reader.skipValue(); break;
             }
         }
         reader.endObject();
-        return new Question(question, answer, explanation, category, difficulty);
+        return new Question(type, question, options, answer, explanation, example, category, difficulty);
+    }
+
+    private void handleMCQAnswer(String userAnswer) {
+        if (!quizStarted || questions.isEmpty() || currentIndex >= questions.size()) return;
+
+        Question q = questions.get(currentIndex);
+        boolean correct = false;
+        if (q.getAnswer() instanceof String) {
+            correct = userAnswer.equals(q.getAnswer());
+        }
+        if (correct) score++;
+
+        lastDifficulty = toFloat(q.getDifficulty());
+
+        explanationText.setText((correct ? "✅ Correct!" : "❌ Incorrect!") + "\n" + q.getExplanation());
+        explanationText.setVisibility(View.VISIBLE);
+        exampleText.setText(q.getExample());
+        exampleText.setVisibility(View.VISIBLE);
+
+        // Hide MCQ answer buttons after selection
+        for (int i = 0; i < mcqOptionsLayout.getChildCount(); i++) {
+            View v = mcqOptionsLayout.getChildAt(i);
+            v.setEnabled(false);
+            v.setVisibility(View.INVISIBLE);
+        }
+
+        currentIndex++;
+        new Handler().postDelayed(() -> {
+            if (currentIndex < questions.size()) {
+                displayNextQuestion();
+            } else {
+                finishQuiz();
+            }
+        }, 2000);
     }
 
     private void handleAnswer(boolean userAnswer) {
         if (!quizStarted || questions.isEmpty() || currentIndex >= questions.size()) return;
 
         Question q = questions.get(currentIndex);
-        if (q.getAnswer() == userAnswer) score++;
+        boolean correct = false;
+        if (q.getAnswer() instanceof Boolean) {
+            correct = ((Boolean) q.getAnswer()) == userAnswer;
+        }
+        if (correct) score++;
 
         lastDifficulty = toFloat(q.getDifficulty());
-        // lastCategory is already set from user selection
 
-        explanationText.setText((q.getAnswer() == userAnswer ? "✅ Correct!" : "❌ Incorrect!") + "\n" + q.getExplanation());
+        explanationText.setText((correct ? "✅ Correct!" : "❌ Incorrect!") + "\n" + q.getExplanation());
         explanationText.setVisibility(View.VISIBLE);
+        exampleText.setText(q.getExample());
+        exampleText.setVisibility(View.VISIBLE);
+
+        // Hide answer buttons until next question
+        buttonTrue.setEnabled(false);
+        buttonFalse.setEnabled(false);
+        buttonTrue.setVisibility(View.INVISIBLE);
+        buttonFalse.setVisibility(View.INVISIBLE);
 
         currentIndex++;
         new Handler().postDelayed(() -> {
@@ -175,19 +248,45 @@ public class QuizActivity extends AppCompatActivity {
     private void displayNextQuestion() {
         if (currentIndex >= questions.size()) return;
         Question q = questions.get(currentIndex);
+
         questionView.setText(q.getQuestion());
         questionCounter.setText((currentIndex + 1) + " of " + questions.size());
         metaText.setText("Category: " + q.getCategory() + " | Difficulty: " + q.getDifficulty());
         explanationText.setVisibility(View.GONE);
+        exampleText.setVisibility(View.GONE);
+
+        if ("mcq".equals(q.getType())) {
+            buttonTrue.setVisibility(View.GONE);
+            buttonFalse.setVisibility(View.GONE);
+            mcqOptionsLayout.setVisibility(View.VISIBLE);
+            mcqOptionsLayout.removeAllViews();
+            List<String> opts = q.getOptions();
+
+            for (String opt : opts) {
+                Button btn = new Button(this, null, 0, R.style.MCQOptionButton);
+                btn.setText(toSentenceCase(opt)); // Or original case as you prefer
+                btn.setAllCaps(false);
+                btn.setOnClickListener(v -> handleMCQAnswer(opt));
+                mcqOptionsLayout.addView(btn);
+            }
+        } else { // true_false
+            mcqOptionsLayout.setVisibility(View.GONE);
+            buttonTrue.setEnabled(true);
+            buttonFalse.setEnabled(true);
+            buttonTrue.setVisibility(View.VISIBLE);
+            buttonFalse.setVisibility(View.VISIBLE);
+        }
     }
 
     private void finishQuiz() {
-        UserStatsManager.recordQuiz(this, score, lastDifficulty, lastCategory);
         String summary = "Quiz complete!\n"
                 + "Score: " + score + "/" + questions.size()
                 + "\nCategory: " + selectedCategoryName
                 + "\nDifficulty: " + lastDifficulty;
         Toast.makeText(this, summary, Toast.LENGTH_LONG).show();
+
+        UserStatsManager.recordQuiz(this, score, lastDifficulty, lastDifficulty);
+
         finish();
     }
 
@@ -204,4 +303,10 @@ public class QuizActivity extends AppCompatActivity {
             }
         }
     }
+    private String toSentenceCase(String input) {
+        if (input == null || input.isEmpty()) return input;
+        input = input.trim();
+        return input.substring(0, 1).toUpperCase() + input.substring(1).toLowerCase();
+    }
+
 }

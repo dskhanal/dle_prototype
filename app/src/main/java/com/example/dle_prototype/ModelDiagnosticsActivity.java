@@ -77,7 +77,7 @@ public class ModelDiagnosticsActivity extends Activity {
                     Intent intent = new Intent(ModelDiagnosticsActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
-                }, 5000);
+                }, 10000);
             }
         }).start();
     }
@@ -262,7 +262,7 @@ public class ModelDiagnosticsActivity extends Activity {
             interpreter.close();
 
         } catch (Exception e) {
-            log.append("\n❌ Error during inference simulation:\n").append(e.toString());
+            log.append("\n❌ Error during inference simulation:\n").append(e);
         }
         return log.toString();
     }

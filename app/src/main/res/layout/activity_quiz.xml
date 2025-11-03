@@ -24,46 +24,93 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="10dp"/>
 
-        <!-- Category Buttons (wrap for easy hide) -->
+        <!-- Category Buttons (now 6 buttons in two rows for mobile) -->
         <LinearLayout
             android:id="@+id/categoryButtonsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="center"
             android:layout_marginBottom="20dp">
 
-            <Button
-                android:id="@+id/btnCategoryHTML"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:text="HTML"
-                android:textColor="#fff"
-                android:backgroundTint="#1e88e5"
-                android:layout_marginEnd="8dp"
-                android:elevation="3dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
 
-            <Button
-                android:id="@+id/btnCategoryCSS"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:text="CSS"
-                android:textColor="#fff"
-                android:backgroundTint="#43a047"
-                android:layout_marginEnd="8dp"
-                android:elevation="3dp"/>
+                <Button
+                    android:id="@+id/btnCategoryHTML"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="HTML"
+                    android:textColor="#fff"
+                    android:backgroundTint="#1e88e5"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="3dp"/>
 
-            <Button
-                android:id="@+id/btnCategoryJS"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_weight="1"
-                android:text="JavaScript"
-                android:textColor="#fff"
-                android:backgroundTint="#ffa000"
-                android:elevation="3dp"/>
+                <Button
+                    android:id="@+id/btnCategoryCSS"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="CSS"
+                    android:textColor="#fff"
+                    android:backgroundTint="#43a047"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="3dp"/>
+
+                <Button
+                    android:id="@+id/btnCategoryJS"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="JavaScript"
+                    android:textColor="#fff"
+                    android:backgroundTint="#ffa000"
+                    android:elevation="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCategoryPHP"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="PHP"
+                    android:textColor="#fff"
+                    android:backgroundTint="#7b1fa2"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="3dp"/>
+
+                <Button
+                    android:id="@+id/btnCategoryMYSQL"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="MySQL"
+                    android:textColor="#fff"
+                    android:backgroundTint="#0277bd"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="3dp"/>
+
+                <Button
+                    android:id="@+id/btnCategoryPYTHON"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Python"
+                    android:textColor="#fff"
+                    android:backgroundTint="#388e3c"
+                    android:elevation="3dp"/>
+            </LinearLayout>
         </LinearLayout>
 
         <!-- Quiz Content (hidden until category selected) -->
@@ -125,6 +172,29 @@
                 android:layout_marginBottom="12dp"
                 android:visibility="gone"/>
 
+            <TextView
+                android:id="@+id/exampleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#388e3c"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"/>
+
+            <!-- MCQ Option Buttons Layout (added here) -->
+            <LinearLayout
+                android:id="@+id/mcqOptionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textAllCaps="false"
+                android:visibility="gone"/>
+
+            <!-- True/False Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,6 +211,7 @@
                     android:textColor="#fff"
                     android:backgroundTint="#388e3c"
                     android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
                     android:elevation="2dp"/>
 
                 <Button
@@ -151,6 +222,7 @@
                     android:text="False"
                     android:textColor="#fff"
                     android:backgroundTint="#d32f2f"
+                    android:textAllCaps="false"
                     android:elevation="2dp"/>
             </LinearLayout>
         </LinearLayout>

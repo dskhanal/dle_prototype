@@ -1,702 +1,3322 @@
 [
   {
-    "question": "The <p> tag is used to embed videos.",
-    "answer": false,
-    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "The <img> tag is used to embed images in a web page.",
+    "answer": true,
+    "explanation": "<img> embeds images; it requires at least a 'src' and 'alt' attribute.",
+    "example": "<img src='cat.jpg' alt='A cat'>"
   },
   {
-    "question": "You must always close all HTML tags.",
-    "answer": false,
-    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "Which HTML tag is used to create a paragraph?",
+    "options": ["<div>", "<p>", "<span>", "<section>"],
+    "answer": "<p>",
+    "explanation": "<p> defines a paragraph in HTML.",
+    "example": "<p>This is a paragraph.</p>"
   },
   {
-    "question": "The <style> tag is used for CSS.",
-    "answer": true,
-    "explanation": "<style> embeds CSS in an HTML document.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS Grid is a layout system.",
-    "answer": true,
-    "explanation": "CSS Grid provides a two-dimensional layout system.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<div> is used to create containers in HTML.",
-    "answer": true,
-    "explanation": "<div> defines divisions or sections in HTML.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "The <br> tag creates a line break in HTML.",
+    "answer": true,
+    "explanation": "<br> inserts a line break, forcing content to a new line.",
+    "example": "<p>Line 1<br>Line 2</p>"
   },
   {
-    "question": "The <br> tag adds a line break.",
-    "answer": true,
-    "explanation": "<br> inserts a line break in HTML.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "Which attribute specifies the destination of a link in an <a> tag?",
+    "options": ["alt", "src", "href", "title"],
+    "answer": "href",
+    "explanation": "'href' defines the URL the link goes to.",
+    "example": "<a href='https://example.com'>Visit Example</a>"
   },
   {
-    "question": "CSS can be used to animate elements.",
-    "answer": true,
-    "explanation": "CSS animations allow movement and transitions without JavaScript.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "'let' declares a block-scoped variable in JS.",
-    "answer": true,
-    "explanation": "'let' is used for block-scoped variable declarations.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS stands for Computer Style Sheets.",
-    "answer": false,
-    "explanation": "CSS stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "<div> is used to create containers in HTML.",
-    "answer": true,
-    "explanation": "<div> defines divisions or sections in HTML.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS selectors target HTML elements.",
+    "difficulty": "Easy",
+    "question": "Every HTML document must have a <title> tag.",
     "answer": true,
-    "explanation": "Selectors apply styles to specific HTML elements.",
-    "category": "CSS",
-    "difficulty": "Easy"
+    "explanation": "<title> sets the page title shown in the browser tab.",
+    "example": "<title>My Webpage</title>"
   },
   {
-    "question": "CSS selectors target HTML elements.",
-    "answer": true,
-    "explanation": "Selectors apply styles to specific HTML elements.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <p> tag is used to embed videos.",
-    "answer": false,
-    "explanation": "<p> defines paragraphs. Use <video> for videos.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "Which HTML tag is used to display a horizontal line?",
+    "options": ["<hr>", "<line>", "<break>", "<hline>"],
+    "answer": "<hr>",
+    "explanation": "<hr> draws a horizontal rule (line) across the page.",
+    "example": "<hr>"
   },
   {
-    "question": "JavaScript is the same as Java.",
-    "answer": false,
-    "explanation": "Despite the name, JavaScript is a different language than Java.",
-    "category": "JavaScript",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <br> tag adds a line break.",
-    "answer": true,
-    "explanation": "<br> inserts a line break in HTML.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "'let' declares a block-scoped variable in JS.",
+    "difficulty": "Easy",
+    "question": "The <ul> tag is used to create an unordered list.",
     "answer": true,
-    "explanation": "'let' is used for block-scoped variable declarations.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
+    "explanation": "<ul> creates a bulleted list.",
+    "example": "<ul><li>Apple</li><li>Banana</li></ul>"
   },
   {
-    "question": "CSS Grid is a layout system.",
-    "answer": true,
-    "explanation": "CSS Grid provides a two-dimensional layout system.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript is the same as Java.",
-    "answer": false,
-    "explanation": "Despite the name, JavaScript is a different language than Java.",
-    "category": "JavaScript",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS stands for Computer Style Sheets.",
-    "answer": false,
-    "explanation": "CSS stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript supports object-oriented programming.",
-    "answer": true,
-    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "HTML5 introduced the <article> element.",
-    "answer": true,
-    "explanation": "<article> is used for self-contained content.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "Which tag is used for the largest heading?",
+    "options": ["<heading>", "<h6>", "<h1>", "<header>"],
+    "answer": "<h1>",
+    "explanation": "<h1> is the largest HTML heading.",
+    "example": "<h1>Main Title</h1>"
   },
   {
-    "question": "JavaScript is statically typed.",
-    "answer": false,
-    "explanation": "JavaScript is dynamically typed.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "You must always close all HTML tags.",
-    "answer": false,
-    "explanation": "Some tags like <br> and <img> are self-closing.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript is the same as Java.",
-    "answer": false,
-    "explanation": "Despite the name, JavaScript is a different language than Java.",
-    "category": "JavaScript",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS Grid is a layout system.",
+    "difficulty": "Easy",
+    "question": "HTML tags are case-insensitive.",
     "answer": true,
-    "explanation": "CSS Grid provides a two-dimensional layout system.",
-    "category": "CSS",
-    "difficulty": "Medium"
+    "explanation": "HTML tags work in both uppercase and lowercase.",
+    "example": "<BODY> is the same as <body>."
   },
   {
-    "question": "CSS stands for Computer Style Sheets.",
-    "answer": false,
-    "explanation": "CSS stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <style> tag is used for CSS.",
-    "answer": true,
-    "explanation": "<style> embeds CSS in an HTML document.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS stands for Computer Style Sheets.",
-    "answer": false,
-    "explanation": "CSS stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS stands for Creative Style Sheets.",
-    "answer": false,
-    "explanation": "CSS actually stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript is statically typed.",
-    "answer": false,
-    "explanation": "JavaScript is dynamically typed.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript is statically typed.",
-    "answer": false,
-    "explanation": "JavaScript is dynamically typed.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript supports object-oriented programming.",
-    "answer": true,
-    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<img> requires an 'alt' attribute for accessibility.",
-    "answer": true,
-    "explanation": "'alt' provides alternative text for screen readers.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "Which tag is used to insert a line break?",
+    "options": ["<break>", "<br>", "<lb>", "<newline>"],
+    "answer": "<br>",
+    "explanation": "<br> inserts a line break.",
+    "example": "<p>Hello<br>World</p>"
   },
+
   {
-    "question": "The <br> tag adds a line break.",
-    "answer": true,
-    "explanation": "<br> inserts a line break in HTML.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "The <ol> tag is used to create a numbered list.",
+    "answer": true,
+    "explanation": "<ol> creates an ordered (numbered) list.",
+    "example": "<ol><li>One</li><li>Two</li></ol>"
   },
   {
-    "question": "HTML5 introduced the <article> element.",
-    "answer": true,
-    "explanation": "<article> is used for self-contained content.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "Which attribute is used for image alternate text?",
+    "options": ["src", "alt", "title", "href"],
+    "answer": "alt",
+    "explanation": "'alt' describes the image for screen readers or if the image fails to load.",
+    "example": "<img src='dog.jpg' alt='A dog'>"
   },
   {
-    "question": "<img> requires an 'alt' attribute for accessibility.",
-    "answer": true,
-    "explanation": "'alt' provides alternative text for screen readers.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS stands for Creative Style Sheets.",
-    "answer": false,
-    "explanation": "CSS actually stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "<div> is used to create containers in HTML.",
+    "difficulty": "Easy",
+    "question": "The <table> tag is used to create tables in HTML.",
     "answer": true,
-    "explanation": "<div> defines divisions or sections in HTML.",
+    "explanation": "<table> creates a table structure.",
+    "example": "<table><tr><td>Cell</td></tr></table>"
+  },
+  {
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Easy",
+    "question": "Which tag defines emphasized text?",
+    "options": ["<b>", "<i>", "<em>", "<strong>"],
+    "answer": "<em>",
+    "explanation": "<em> is for emphasized (usually italic) text.",
+    "example": "<em>Important!</em>"
   },
   {
-    "question": "'let' declares a block-scoped variable in JS.",
-    "answer": true,
-    "explanation": "'let' is used for block-scoped variable declarations.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "HTML5 introduced the <article> element.",
-    "answer": true,
-    "explanation": "<article> is used for self-contained content.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "<body> contains the main content of an HTML document.",
+    "answer": true,
+    "explanation": "All visible content goes inside <body>.",
+    "example": "<body><h1>Hello</h1></body>"
   },
   {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag is used for creating hyperlinks?",
+    "options": ["<hyperlink>", "<a>", "<link>", "<href>"],
+    "answer": "<a>",
+    "explanation": "<a> creates links to other pages.",
+    "example": "<a href='page.html'>Link</a>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "The <head> section contains metadata about the document.",
+    "answer": true,
+    "explanation": "<head> is for meta tags, title, links, and scripts.",
+    "example": "<head><title>Title</title></head>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag is used for inserting images?",
+    "options": ["<img>", "<image>", "<pic>", "<src>"],
+    "answer": "<img>",
+    "explanation": "<img> is used for images. It needs 'src' and 'alt'.",
+    "example": "<img src='tree.jpg' alt='A tree'>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Easy",
     "question": "HTML stands for Hyper Text Markup Language.",
     "answer": true,
-    "explanation": "HTML is the standard markup language for web documents.",
+    "explanation": "HTML is the language for creating web pages.",
+    "example": "A basic HTML page uses <!DOCTYPE html>, <html>, <head>, <body>."
+  },
+  {
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Medium",
+    "question": "Which element is used to define the navigation links?",
+    "options": ["<section>", "<nav>", "<header>", "<aside>"],
+    "answer": "<nav>",
+    "explanation": "<nav> is a semantic tag for navigation links.",
+    "example": "<nav><a href='#home'>Home</a></nav>"
   },
   {
-    "question": "<img> requires an 'alt' attribute for accessibility.",
-    "answer": true,
-    "explanation": "'alt' provides alternative text for screen readers.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript can manipulate the DOM.",
+    "difficulty": "Medium",
+    "question": "The <footer> tag is used to add content at the bottom of a web page.",
     "answer": true,
-    "explanation": "JavaScript allows dynamic manipulation of web page content.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
+    "explanation": "<footer> is for content at the bottom, like copyright info.",
+    "example": "<footer>&copy; 2025</footer>"
   },
+
   {
-    "question": "<img> requires an 'alt' attribute for accessibility.",
-    "answer": true,
-    "explanation": "'alt' provides alternative text for screen readers.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Medium",
+    "question": "Which attribute is used to open a link in a new tab?",
+    "options": ["target='_blank'", "href='_blank'", "newtab", "rel='blank'"],
+    "answer": "target='_blank'",
+    "explanation": "target='_blank' opens a link in a new browser tab.",
+    "example": "<a href='page.html' target='_blank'>Open in new tab</a>"
   },
   {
-    "question": "JavaScript is the same as Java.",
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "The <span> tag is a block-level element.",
     "answer": false,
-    "explanation": "Despite the name, JavaScript is a different language than Java.",
-    "category": "JavaScript",
-    "difficulty": "Easy"
+    "explanation": "<span> is inline, not block-level.",
+    "example": "<span>Inline</span>"
   },
   {
-    "question": "Flexbox allows 2D layout control.",
-    "answer": false,
-    "explanation": "Flexbox allows only 1D layout (row or column).",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript is the same as Java.",
-    "answer": false,
-    "explanation": "Despite the name, JavaScript is a different language than Java.",
-    "category": "JavaScript",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "<div> is used to create containers in HTML.",
-    "answer": true,
-    "explanation": "<div> defines divisions or sections in HTML.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Medium",
+    "question": "Which element is best for grouping inline elements for styling?",
+    "options": ["<div>", "<section>", "<span>", "<aside>"],
+    "answer": "<span>",
+    "explanation": "<span> is used to group inline elements.",
+    "example": "<span style='color:blue;'>Blue text</span>"
   },
   {
-    "question": "JavaScript can manipulate the DOM.",
-    "answer": true,
-    "explanation": "JavaScript allows dynamic manipulation of web page content.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS can be used to animate elements.",
-    "answer": true,
-    "explanation": "CSS animations allow movement and transitions without JavaScript.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS selectors target HTML elements.",
-    "answer": true,
-    "explanation": "Selectors apply styles to specific HTML elements.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <br> tag adds a line break.",
-    "answer": true,
-    "explanation": "<br> inserts a line break in HTML.",
+    "type": "true_false",
     "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS can be used to animate elements.",
-    "answer": true,
-    "explanation": "CSS animations allow movement and transitions without JavaScript.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "The <style> tag is used for CSS.",
-    "answer": true,
-    "explanation": "<style> embeds CSS in an HTML document.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <br> tag adds a line break.",
-    "answer": true,
-    "explanation": "<br> inserts a line break in HTML.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript is statically typed.",
-    "answer": false,
-    "explanation": "JavaScript is dynamically typed.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS Grid is a layout system.",
-    "answer": true,
-    "explanation": "CSS Grid provides a two-dimensional layout system.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "'let' declares a block-scoped variable in JS.",
-    "answer": true,
-    "explanation": "'let' is used for block-scoped variable declarations.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS selectors target HTML elements.",
-    "answer": true,
-    "explanation": "Selectors apply styles to specific HTML elements.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "Flexbox allows 2D layout control.",
-    "answer": false,
-    "explanation": "Flexbox allows only 1D layout (row or column).",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<head> contains metadata for the document.",
-    "answer": true,
-    "explanation": "The <head> tag contains meta tags, links, and title.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "HTML5 introduced the <article> element.",
-    "answer": true,
-    "explanation": "<article> is used for self-contained content.",
-    "category": "HTML",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript can manipulate the DOM.",
-    "answer": true,
-    "explanation": "JavaScript allows dynamic manipulation of web page content.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript is statically typed.",
-    "answer": false,
-    "explanation": "JavaScript is dynamically typed.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<head> contains metadata for the document.",
-    "answer": true,
-    "explanation": "The <head> tag contains meta tags, links, and title.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "HTML stands for Hyper Text Markup Language.",
-    "answer": true,
-    "explanation": "HTML is the standard markup language for web documents.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript can manipulate the DOM.",
-    "answer": true,
-    "explanation": "JavaScript allows dynamic manipulation of web page content.",
-    "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "HTML5 introduced the <article> element.",
-    "answer": true,
-    "explanation": "<article> is used for self-contained content.",
-    "category": "HTML",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "The <style> tag is used for CSS.",
-    "answer": true,
-    "explanation": "<style> embeds CSS in an HTML document.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "The <p> tag is used to embed videos.",
-    "answer": false,
-    "explanation": "<p> defines paragraphs. Use <video> for videos.",
-    "category": "HTML",
-    "difficulty": "Medium"
-  },
-  {
+    "difficulty": "Medium",
     "question": "You must always close all HTML tags.",
     "answer": false,
-    "explanation": "Some tags like <br> and <img> are self-closing.",
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "Some tags, like <br> and <img>, are self-closing.",
+    "example": "<br> and <img src='...'>"
   },
   {
-    "question": "HTML stands for Hyper Text Markup Language.",
-    "answer": true,
-    "explanation": "HTML is the standard markup language for web documents.",
+    "type": "mcq",
     "category": "HTML",
-    "difficulty": "Easy"
+    "difficulty": "Medium",
+    "question": "Which tag is used to create a dropdown list?",
+    "options": ["<input>", "<dropdown>", "<select>", "<menu>"],
+    "answer": "<select>",
+    "explanation": "<select> creates a dropdown list with <option> tags.",
+    "example": "<select><option>One</option></select>"
   },
   {
-    "question": "JavaScript supports object-oriented programming.",
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "The <strong> tag displays text in bold.",
     "answer": true,
-    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "explanation": "<strong> is semantic for bold/important text.",
+    "example": "<strong>Warning!</strong>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which HTML5 element is used for self-contained content, such as a blog post?",
+    "options": ["<section>", "<article>", "<div>", "<aside>"],
+    "answer": "<article>",
+    "explanation": "<article> is for independent, self-contained content.",
+    "example": "<article><h2>Post</h2></article>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "<meta> tags go inside the <head> section.",
+    "answer": true,
+    "explanation": "<meta> provides metadata, e.g., charset, description.",
+    "example": "<meta charset='UTF-8'>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag is used to mark up a quotation?",
+    "options": ["<q>", "<quote>", "<blockquote>", "<cite>"],
+    "answer": "<blockquote>",
+    "explanation": "<blockquote> is for long, block-level quotations.",
+    "example": "<blockquote>This is a quote.</blockquote>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "<iframe> can be used to embed another web page.",
+    "answer": true,
+    "explanation": "<iframe> embeds external web content.",
+    "example": "<iframe src='https://example.com'></iframe>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which input type allows the user to pick a date?",
+    "options": ["text", "calendar", "date", "datetime"],
+    "answer": "date",
+    "explanation": "<input type='date'> creates a date picker.",
+    "example": "<input type='date'>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "<input> tags must always have a closing tag.",
+    "answer": false,
+    "explanation": "<input> is self-closing.",
+    "example": "<input type='text'>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag creates a clickable button?",
+    "options": ["<input type='button'>", "<button>", "<click>", "<btn>"],
+    "answer": "<button>",
+    "explanation": "<button> creates a clickable button.",
+    "example": "<button>Click Me</button>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "HTML5 introduced semantic tags like <section>, <header>, and <footer>.",
+    "answer": true,
+    "explanation": "HTML5 added new semantic tags for structure and accessibility.",
+    "example": "<section>...</section>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which tag is used for defining a group of related options in a drop-down list?",
+    "options": ["<option>", "<group>", "<optgroup>", "<select>"],
+    "answer": "<optgroup>",
+    "explanation": "<optgroup> groups options within a <select>.",
+    "example": "<select><optgroup label='Fruits'><option>Apple</option></optgroup></select>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "The <canvas> element is used to draw graphics via scripting (usually JavaScript).",
+    "answer": true,
+    "explanation": "<canvas> allows dynamic, scriptable rendering of 2D shapes and images.",
+    "example": "<canvas id='myCanvas'></canvas>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "What is the main purpose of the <label> tag?",
+    "options": [
+      "To create a text box",
+      "To add a caption to a table",
+      "To bind a text label to a form input",
+      "To create a button"
+    ],
+    "answer": "To bind a text label to a form input",
+    "explanation": "<label> improves accessibility and allows the user to click the label to focus/select the related input.",
+    "example": "<label for='username'>Username:</label> <input id='username'>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "The <b> tag adds semantic meaning for search engines.",
+    "answer": false,
+    "explanation": "<b> only styles text bold; <strong> adds semantic emphasis.",
+    "example": "<b>Not semantic</b> vs <strong>Semantic</strong>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which HTML element is not a semantic element?",
+    "options": ["<article>", "<div>", "<nav>", "<footer>"],
+    "answer": "<div>",
+    "explanation": "<div> is generic and not semantic.",
+    "example": "<div>Section</div>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "<audio> and <video> elements can have fallback content for unsupported browsers.",
+    "answer": true,
+    "explanation": "You can place text or alternate content inside <audio> or <video> tags.",
+    "example": "<video src='movie.mp4'>Your browser does not support video.</video>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which attribute is used to uniquely identify an HTML element?",
+    "options": ["class", "id", "name", "data-id"],
+    "answer": "id",
+    "explanation": "'id' must be unique in the document and is used to target elements.",
+    "example": "<div id='main'></div>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "The <abbr> tag is used for abbreviations and acronyms.",
+    "answer": true,
+    "explanation": "<abbr> gives meaning and accessibility to abbreviations.",
+    "example": "<abbr title='Hyper Text Markup Language'>HTML</abbr>"
+  },
+
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which tag is used to define the header for a document or section?",
+    "options": ["<head>", "<header>", "<section>", "<main>"],
+    "answer": "<header>",
+    "explanation": "<header> is used for introductory content or navigation links.",
+    "example": "<header><h1>Site Title</h1></header>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "A <form> tag can contain other forms.",
+    "answer": false,
+    "explanation": "Nesting <form> elements is not allowed in HTML.",
+    "example": "<form>...<form>...</form>...</form> (invalid)"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag is used to display preformatted text in HTML?",
+    "options": ["<code>", "<pre>", "<format>", "<text>"],
+    "answer": "<pre>",
+    "explanation": "<pre> preserves spaces, tabs, and line breaks exactly as written in the HTML source.",
+    "example": "<pre>Line 1\n    Line 2 (indented)</pre>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "The <title> tag appears in the body of the web page.",
+    "answer": false,
+    "explanation": "<title> goes inside the <head> section and appears on the browser tab, not on the page body.",
+    "example": "<head><title>My Page</title></head>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "What does the 'required' attribute do on an <input> element?",
+    "options": [
+      "Limits input length",
+      "Makes the input optional",
+      "Ensures the field must be filled out before form submission",
+      "Sets a default value"
+    ],
+    "answer": "Ensures the field must be filled out before form submission",
+    "explanation": "'required' forces users to fill in a value; otherwise, the form won’t submit.",
+    "example": "<input type='email' required>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "The <input type='password'> element displays the entered text as dots or asterisks.",
+    "answer": true,
+    "explanation": "The 'password' type hides the user input for privacy and security.",
+    "example": "<input type='password'>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag is used to define a table row in HTML?",
+    "options": ["<tr>", "<td>", "<row>", "<table-row>"],
+    "answer": "<tr>",
+    "explanation": "<tr> stands for 'table row' and wraps cells within a row.",
+    "example": "<table><tr><td>Cell 1</td></tr></table>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "The <link> tag is used to link external CSS files.",
+    "answer": true,
+    "explanation": "<link rel='stylesheet'> in the <head> section links an external stylesheet.",
+    "example": "<link rel='stylesheet' href='style.css'>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which tag is used for displaying computer code samples?",
+    "options": ["<sample>", "<code>", "<kbd>", "<script>"],
+    "answer": "<code>",
+    "explanation": "<code> is intended for short code snippets within a sentence or paragraph.",
+    "example": "<p>Use the <code>print()</code> function.</p>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "You can nest <ul> lists inside <li> items.",
+    "answer": true,
+    "explanation": "Nested <ul> lists are allowed to create sublists.",
+    "example": "<ul><li>Item 1<ul><li>Subitem 1</li></ul></li></ul>"
+  },
+  {
+    "type": "mcq",
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "What is the correct HTML for inserting a background color?",
+    "options": [
+      "<body bg='yellow'>",
+      "<background color='yellow'>",
+      "<body style='background-color:yellow;'>",
+      "<bg color='yellow'>"
+    ],
+    "answer": "<body style='background-color:yellow;'>",
+    "explanation": "Use the style attribute and CSS for setting background color.",
+    "example": "<body style='background-color:yellow;'>"
+  },
+  {
+    "type": "true_false",
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "The <data> tag links a piece of content with a machine-readable value.",
+    "answer": true,
+    "explanation": "<data> associates a human-readable text with a value for machines (like scripts).",
+    "example": "<data value='3967381398'>James</data>"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "CSS stands for Cascading Style Sheets.",
+    "answer": true,
+    "explanation": "CSS is the language for describing the presentation of web pages.",
+    "example": "body { color: blue; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes the background color of an element?",
+    "options": ["background-color", "color", "bgcolor", "background-style"],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color of an element.",
+    "example": "p { background-color: yellow; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "The 'color' property in CSS sets the background color.",
+    "answer": false,
+    "explanation": "'color' changes the text color, not the background.",
+    "example": "h1 { color: red; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which symbol is used to select an ID in CSS?",
+    "options": [".", "#", "*", "&"],
+    "answer": "#",
+    "explanation": "# is used to select elements by ID.",
+    "example": "#header { font-size: 2em; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "CSS can be used to control the layout of multiple web pages at once.",
+    "answer": true,
+    "explanation": "External CSS files can style many web pages.",
+    "example": "<link rel='stylesheet' href='styles.css'>"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property is used to make text bold in CSS?",
+    "options": ["font-weight", "font-style", "font-size", "text-transform"],
+    "answer": "font-weight",
+    "explanation": "font-weight: bold makes text bold.",
+    "example": "strong { font-weight: bold; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "A CSS class can be applied to multiple elements.",
+    "answer": true,
+    "explanation": "Classes are reusable and can be used on many elements.",
+    "example": "<div class='menu'></div> <p class='menu'></p>"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which is the correct CSS to select all <p> tags?",
+    "options": ["p", "#p", ".p", "<p>"],
+    "answer": "p",
+    "explanation": "The tag name selects all elements of that type.",
+    "example": "p { margin: 10px; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "You can use CSS to hide elements on a web page.",
+    "answer": true,
+    "explanation": "The display or visibility property hides elements.",
+    "example": "div { display: none; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property controls the size of the text?",
+    "options": ["font-style", "font-weight", "font-size", "text-align"],
+    "answer": "font-size",
+    "explanation": "font-size sets how big or small text appears.",
+    "example": "h2 { font-size: 24px; }"
+  },
+
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "The 'margin' property adds space outside an element's border.",
+    "answer": true,
+    "explanation": "Margin creates space around elements, outside borders.",
+    "example": "div { margin: 10px; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which CSS property aligns text to the center?",
+    "options": ["vertical-align", "align", "text-align", "font-align"],
+    "answer": "text-align",
+    "explanation": "text-align: center centers the text.",
+    "example": "p { text-align: center; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "An external CSS file must be linked inside the <head> tag of an HTML document.",
+    "answer": true,
+    "explanation": "The best practice is to link external CSS files in the <head> for performance.",
+    "example": "<link rel='stylesheet' href='styles.css'>"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which unit is relative to the font-size of the element?",
+    "options": ["px", "%", "em", "cm"],
+    "answer": "em",
+    "explanation": "1em is equal to the current font-size of the element.",
+    "example": "p { font-size: 2em; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "The property 'display: block;' makes an element fill the whole width of its parent.",
+    "answer": true,
+    "explanation": "Block elements span the full width of their parent by default.",
+    "example": "div { display: block; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "How do you add a comment in CSS?",
+    "options": [
+      "// This is a comment",
+      "<!-- This is a comment -->",
+      "/* This is a comment */",
+      "' This is a comment"
+    ],
+    "answer": "/* This is a comment */",
+    "explanation": "CSS comments use /* comment */ syntax.",
+    "example": "/* This is a CSS comment */"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "You can combine multiple selectors in a single CSS rule.",
+    "answer": true,
+    "explanation": "Comma-separated selectors apply the same styles to multiple elements.",
+    "example": "h1, h2 { color: green; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "What does the 'float' property do?",
+    "options": [
+      "Centers the element on the page",
+      "Moves the element left or right and allows content to wrap around it",
+      "Fixes the element to the screen",
+      "Adds a shadow to the element"
+    ],
+    "answer": "Moves the element left or right and allows content to wrap around it",
+    "explanation": "float positions elements and wraps content around them.",
+    "example": "img { float: left; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "The property 'position: absolute;' positions the element relative to its first positioned (not static) ancestor.",
+    "answer": true,
+    "explanation": "An absolutely positioned element is placed relative to its nearest positioned ancestor.",
+    "example": "div { position: absolute; top: 10px; left: 20px; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property adds rounded corners to an element?",
+    "options": ["corner-radius", "border-style", "border-radius", "curve"],
+    "answer": "border-radius",
+    "explanation": "border-radius controls how rounded the corners appear.",
+    "example": "div { border-radius: 10px; }"
+  },
+
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "A CSS ID selector can be used more than once on the same page.",
+    "answer": false,
+    "explanation": "IDs must be unique in a document.",
+    "example": "<div id='header'></div>"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which of the following selectors has the highest specificity?",
+    "options": ["Element selector", "Class selector", "ID selector", "Universal selector"],
+    "answer": "ID selector",
+    "explanation": "ID selectors are more specific than class or element selectors.",
+    "example": "#main { color: orange; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "The property 'overflow: scroll;' adds scrollbars to an element if its content is too big.",
+    "answer": true,
+    "explanation": "overflow: scroll always shows scrollbars, even if not needed.",
+    "example": "div { overflow: scroll; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "What is the default value of the position property?",
+    "options": ["fixed", "static", "relative", "absolute"],
+    "answer": "static",
+    "explanation": "Static positioning is the default for all elements.",
+    "example": "p { position: static; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "CSS can be used to create simple animations.",
+    "answer": true,
+    "explanation": "CSS animations and transitions allow movement and effects.",
+    "example": "@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }"
+  },
+
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which property is used to add shadows to text?",
+    "options": ["box-shadow", "text-shadow", "shadow-text", "font-shadow"],
+    "answer": "text-shadow",
+    "explanation": "text-shadow adds shadow to text.",
+    "example": "h1 { text-shadow: 2px 2px 4px #888888; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "You can use pseudo-elements to style only part of an element's content.",
+    "answer": true,
+    "explanation": "Pseudo-elements like ::first-letter or ::before can style parts of elements.",
+    "example": "p::first-letter { font-size: 2em; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "What value of 'display' creates a flex container?",
+    "options": ["block", "inline", "flex", "grid"],
+    "answer": "flex",
+    "explanation": "display: flex creates a flex container for flexible layouts.",
+    "example": ".container { display: flex; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "The property 'z-index' only works on elements with position: static.",
+    "answer": false,
+    "explanation": "z-index only works with positioned elements (relative, absolute, fixed, sticky).",
+    "example": "div { position: relative; z-index: 10; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which selector targets all <a> elements that are being hovered over?",
+    "options": ["a.hover", "a:hover", ".a:hover", "hover a"],
+    "answer": "a:hover",
+    "explanation": ":hover is a pseudo-class for styling elements on mouseover.",
+    "example": "a:hover { color: red; }"
+  },
+
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "CSS Grid can only be used for one-dimensional layouts.",
+    "answer": false,
+    "explanation": "Grid is two-dimensional, for both rows and columns.",
+    "example": ".container { display: grid; grid-template-columns: 1fr 1fr; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which function is used to specify a color using red, green, blue, and alpha (opacity) values?",
+    "options": ["rgb()", "rgba()", "hsl()", "hsla()"],
+    "answer": "rgba()",
+    "explanation": "rgba() allows red, green, blue, and alpha (opacity) values.",
+    "example": "div { background-color: rgba(255,0,0,0.5); }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "The :nth-child() pseudo-class can select every odd or even element.",
+    "answer": true,
+    "explanation": ":nth-child(even) or :nth-child(odd) can target those elements.",
+    "example": "tr:nth-child(even) { background: #eee; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "How can you include a Google Font in your CSS?",
+    "options": [
+      "@font-face { font-family: 'Roboto'; src: url(...); }",
+      "<font src='google.com'>",
+      "@import url('https://fonts.googleapis.com/css?family=Roboto');",
+      "font-family: 'Google Roboto';"
+    ],
+    "answer": "@import url('https://fonts.googleapis.com/css?family=Roboto');",
+    "explanation": "@import is commonly used to add external fonts.",
+    "example": "@import url('https://fonts.googleapis.com/css?family=Roboto');"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "The universal selector (*) can select all elements on the page.",
+    "answer": true,
+    "explanation": "* selects every element for styling.",
+    "example": "* { box-sizing: border-box; }"
+  },
+
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "What does the 'calc()' function do in CSS?",
+    "options": [
+      "Calculates the number of child elements",
+      "Performs calculations to set property values",
+      "Finds the minimum of two values",
+      "Counts the total rules in a stylesheet"
+    ],
+    "answer": "Performs calculations to set property values",
+    "explanation": "calc() lets you add, subtract, multiply, and divide values in CSS.",
+    "example": "width: calc(100% - 80px);"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "The ::before pseudo-element can insert content before an element’s content.",
+    "answer": true,
+    "explanation": "::before can insert generated content.",
+    "example": "p::before { content: 'Note: '; }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which property sets the transparency of an element?",
+    "options": ["opacity", "transparent", "filter", "alpha"],
+    "answer": "opacity",
+    "explanation": "opacity sets the transparency from 0 (invisible) to 1 (opaque).",
+    "example": "img { opacity: 0.5; }"
+  },
+  {
+    "type": "true_false",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "You can use CSS variables (custom properties) to reuse values throughout your stylesheet.",
+    "answer": true,
+    "explanation": "CSS variables are defined with -- and accessed with var().",
+    "example": ":root { --main-color: #333; } h1 { color: var(--main-color); }"
+  },
+  {
+    "type": "mcq",
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which media query will apply styles only to screens wider than 600px?",
+    "options": [
+      "@media screen and (min-width: 600px)",
+      "@media (max-width: 600px)",
+      "@media screen and (width > 600px)",
+      "@media device-min-width: 600px"
+    ],
+    "answer": "@media screen and (min-width: 600px)",
+    "explanation": "min-width triggers for any screen at least 600px wide.",
+    "example": "@media screen and (min-width: 600px) { body { font-size: 18px; } }"
+  },
+  {
+    "type": "true_false",
     "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS stands for Creative Style Sheets.",
-    "answer": false,
-    "explanation": "CSS actually stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS can be used to animate elements.",
+    "difficulty": "Easy",
+    "question": "JavaScript code can be run directly in the browser console.",
     "answer": true,
-    "explanation": "CSS animations allow movement and transitions without JavaScript.",
-    "category": "CSS",
-    "difficulty": "Medium"
+    "explanation": "You can execute JavaScript interactively in the developer console of any browser.",
+    "example": "console.log('Hello, world!');"
   },
   {
-    "question": "'let' declares a block-scoped variable in JS.",
-    "answer": true,
-    "explanation": "'let' is used for block-scoped variable declarations.",
+    "type": "mcq",
     "category": "JavaScript",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "Which symbol is used for single-line comments in JavaScript?",
+    "options": ["//", "#", "/*", "<!--"],
+    "answer": "//",
+    "explanation": "// is used for single-line comments.",
+    "example": "// This is a comment"
   },
   {
-    "question": "CSS stands for Computer Style Sheets.",
-    "answer": false,
-    "explanation": "CSS stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS can be used to animate elements.",
-    "answer": true,
-    "explanation": "CSS animations allow movement and transitions without JavaScript.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<head> contains metadata for the document.",
-    "answer": true,
-    "explanation": "The <head> tag contains meta tags, links, and title.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS Grid is a layout system.",
-    "answer": true,
-    "explanation": "CSS Grid provides a two-dimensional layout system.",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "Flexbox allows 2D layout control.",
-    "answer": false,
-    "explanation": "Flexbox allows only 1D layout (row or column).",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS stands for Creative Style Sheets.",
-    "answer": false,
-    "explanation": "CSS actually stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "HTML stands for Hyper Text Markup Language.",
-    "answer": true,
-    "explanation": "HTML is the standard markup language for web documents.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "You must always close all HTML tags.",
-    "answer": false,
-    "explanation": "Some tags like <br> and <img> are self-closing.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript supports object-oriented programming.",
-    "answer": true,
-    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "type": "true_false",
     "category": "JavaScript",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "CSS stands for Creative Style Sheets.",
-    "answer": false,
-    "explanation": "CSS actually stands for Cascading Style Sheets.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "You must always close all HTML tags.",
-    "answer": false,
-    "explanation": "Some tags like <br> and <img> are self-closing.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "CSS selectors target HTML elements.",
+    "difficulty": "Easy",
+    "question": "The 'let' keyword declares a block-scoped variable.",
     "answer": true,
-    "explanation": "Selectors apply styles to specific HTML elements.",
-    "category": "CSS",
-    "difficulty": "Easy"
+    "explanation": "'let' is block-scoped and cannot be redeclared in the same scope.",
+    "example": "let x = 5;"
   },
   {
-    "question": "The <p> tag is used to embed videos.",
-    "answer": false,
-    "explanation": "<p> defines paragraphs. Use <video> for videos.",
-    "category": "HTML",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "JavaScript supports object-oriented programming.",
-    "answer": true,
-    "explanation": "JavaScript is object-oriented and supports OOP patterns.",
+    "type": "mcq",
     "category": "JavaScript",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "Which of the following is a valid way to define a function in JavaScript?",
+    "options": [
+      "function myFunc() {}",
+      "def myFunc() {}",
+      "function: myFunc() {}",
+      "func myFunc() {}"
+    ],
+    "answer": "function myFunc() {}",
+    "explanation": "Functions are defined with the 'function' keyword.",
+    "example": "function greet() { alert('Hi!'); }"
   },
   {
-    "question": "HTML stands for Hyper Text Markup Language.",
-    "answer": true,
-    "explanation": "HTML is the standard markup language for web documents.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "<head> contains metadata for the document.",
-    "answer": true,
-    "explanation": "The <head> tag contains meta tags, links, and title.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "<img> requires an 'alt' attribute for accessibility.",
-    "answer": true,
-    "explanation": "'alt' provides alternative text for screen readers.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "Flexbox allows 2D layout control.",
-    "answer": false,
-    "explanation": "Flexbox allows only 1D layout (row or column).",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "The <style> tag is used for CSS.",
-    "answer": true,
-    "explanation": "<style> embeds CSS in an HTML document.",
-    "category": "CSS",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "Flexbox allows 2D layout control.",
-    "answer": false,
-    "explanation": "Flexbox allows only 1D layout (row or column).",
-    "category": "CSS",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "The <p> tag is used to embed videos.",
-    "answer": false,
-    "explanation": "<p> defines paragraphs. Use <video> for videos.",
-    "category": "HTML",
-    "difficulty": "Medium"
-  },
-  {
-    "question": "<div> is used to create containers in HTML.",
-    "answer": true,
-    "explanation": "<div> defines divisions or sections in HTML.",
-    "category": "HTML",
-    "difficulty": "Easy"
-  },
-  {
-    "question": "JavaScript can manipulate the DOM.",
-    "answer": true,
-    "explanation": "JavaScript allows dynamic manipulation of web page content.",
+    "type": "true_false",
     "category": "JavaScript",
-    "difficulty": "Medium"
+    "difficulty": "Easy",
+    "question": "JavaScript is a case-sensitive language.",
+    "answer": true,
+    "explanation": "'variable', 'Variable', and 'VARIABLE' are different in JavaScript.",
+    "example": "let myVar = 1; let MyVar = 2;"
   },
   {
-    "question": "<head> contains metadata for the document.",
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "How do you declare a variable that cannot be reassigned?",
+    "options": ["let", "var", "const", "static"],
+    "answer": "const",
+    "explanation": "const variables cannot be reassigned.",
+    "example": "const PI = 3.14;"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Arrays in JavaScript can hold elements of different types.",
     "answer": true,
-    "explanation": "The <head> tag contains meta tags, links, and title.",
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "Arrays can contain numbers, strings, objects, etc.",
+    "example": "let arr = [1, 'a', true];"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which of the following is NOT a valid JavaScript data type?",
+    "options": ["Number", "String", "Boolean", "Character"],
+    "answer": "Character",
+    "explanation": "JavaScript does not have a 'Character' type, only 'String'.",
+    "example": "let a = 'A'; // This is a string"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "You can use both single and double quotes for string literals in JavaScript.",
+    "answer": true,
+    "explanation": "Both 'hello' and \"hello\" are valid string declarations.",
+    "example": "let a = 'hi'; let b = \"hello\";"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "What does the 'typeof' operator return for an array?",
+    "options": ["'array'", "'object'", "'list'", "'arrayobject'"],
+    "answer": "'object'",
+    "explanation": "Arrays are objects in JavaScript, so typeof [] is 'object'.",
+    "example": "typeof [1,2,3]; // 'object'"
+  },
+
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "JavaScript can change the content of an HTML element.",
+    "answer": true,
+    "explanation": "You can use JavaScript to manipulate the DOM.",
+    "example": "document.getElementById('demo').innerHTML = 'Changed!';"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "parseJSON()",
+      "toObject()"
+    ],
+    "answer": "JSON.parse()",
+    "explanation": "JSON.parse() turns a JSON string into an object.",
+    "example": "let obj = JSON.parse('{\"name\":\"Sam\"}');"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "The '===' operator compares both value and type.",
+    "answer": true,
+    "explanation": "'===' is strict equality, comparing both type and value.",
+    "example": "1 === '1' // false"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "What is the output of: console.log(2 + '2');",
+    "options": [
+      "4",
+      "'22'",
+      "NaN",
+      "'4'"
+    ],
+    "answer": "'22'",
+    "explanation": "When adding a number and string, JavaScript concatenates to '22'.",
+    "example": "console.log(2 + '2'); // '22'"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "The 'null' value is the same as 'undefined'.",
+    "answer": false,
+    "explanation": "null means 'no value', undefined means 'not assigned'.",
+    "example": "let x; // undefined; let y = null;"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "How do you write an array literal in JavaScript?",
+    "options": [
+      "let arr = {}",
+      "let arr = []",
+      "let arr = ()",
+      "let arr = <>"
+    ],
+    "answer": "let arr = []",
+    "explanation": "Arrays are created with square brackets.",
+    "example": "let numbers = [1, 2, 3];"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Functions in JavaScript can be assigned to variables.",
+    "answer": true,
+    "explanation": "Functions are first-class objects and can be assigned like any value.",
+    "example": "const f = function() { return 1; };"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "What is the correct syntax for a for loop?",
+    "options": [
+      "for (let i = 0; i < 5; i++)",
+      "for i = 0 to 5",
+      "for (i < 5; let i = 0; i++)",
+      "for (let i = 0; i < 5; i+)"
+    ],
+    "answer": "for (let i = 0; i < 5; i++)",
+    "explanation": "JavaScript for loops use (init; condition; increment).",
+    "example": "for (let i = 0; i < 5; i++) { console.log(i); }"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "JavaScript arrays are zero-indexed.",
+    "answer": true,
+    "explanation": "The first item in an array is at index 0.",
+    "example": "let arr = ['a', 'b']; arr[0] === 'a';"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method adds a new element to the end of an array?",
+    "options": [
+      "push()",
+      "pop()",
+      "shift()",
+      "concat()"
+    ],
+    "answer": "push()",
+    "explanation": "push() adds one or more elements to the end of an array.",
+    "example": "arr.push(4);"
+  },
+
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Arrow functions do not have their own 'this' context.",
+    "answer": true,
+    "explanation": "Arrow functions inherit 'this' from their parent scope.",
+    "example": "const f = () => this;"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which event occurs when a user clicks on an HTML element?",
+    "options": [
+      "onchange",
+      "onmouseover",
+      "onclick",
+      "onmouseclick"
+    ],
+    "answer": "onclick",
+    "explanation": "'onclick' is the event for mouse clicks.",
+    "example": "<button onclick='alert(1)'>Click</button>"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "The Array 'length' property is read-only.",
+    "answer": false,
+    "explanation": "You can assign to 'length' to truncate or expand an array.",
+    "example": "let a = [1,2,3]; a.length = 1;"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which function can be used to delay execution of code?",
+    "options": [
+      "wait()",
+      "delay()",
+      "setTimeout()",
+      "timer()"
+    ],
+    "answer": "setTimeout()",
+    "explanation": "setTimeout() runs code after a specified delay (in ms).",
+    "example": "setTimeout(function() { alert('Hi!'); }, 1000);"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "The 'pop()' method removes the first item from an array.",
+    "answer": false,
+    "explanation": "pop() removes the last item; shift() removes the first.",
+    "example": "let arr = [1,2,3]; arr.pop(); // [1,2]"
+  },
+
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which method can be used to merge two arrays in JavaScript?",
+    "options": [
+      "concat()",
+      "merge()",
+      "join()",
+      "combine()"
+    ],
+    "answer": "concat()",
+    "explanation": "concat() returns a new array combining two or more arrays.",
+    "example": "[1,2].concat([3,4]); // [1,2,3,4]"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Functions can be nested inside other functions in JavaScript.",
+    "answer": true,
+    "explanation": "Functions are first-class citizens and can be nested.",
+    "example": "function outer() { function inner() { } }"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "constant"
+    ],
+    "answer": "const",
+    "explanation": "const creates a block-scoped, read-only named constant.",
+    "example": "const PI = 3.14;"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "The map() function can be used on strings.",
+    "answer": false,
+    "explanation": "map() is for arrays, not strings.",
+    "example": "[1,2,3].map(x => x*2); // [2,4,6]"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "What will be the result of typeof NaN?",
+    "options": [
+      "'number'",
+      "'undefined'",
+      "'object'",
+      "'NaN'"
+    ],
+    "answer": "'number'",
+    "explanation": "NaN is considered a number in JavaScript.",
+    "example": "typeof NaN; // 'number'"
+  },
+
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "You can use 'break' to exit a loop in JavaScript.",
+    "answer": true,
+    "explanation": "'break' immediately exits a loop.",
+    "example": "for (let i=0;i<10;i++){if(i==5)break;}"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which statement creates a new Promise?",
+    "options": [
+      "let p = new Promise(function(resolve, reject) {})",
+      "let p = Promise()",
+      "let p = promise.new()",
+      "let p = Promise.create()"
+    ],
+    "answer": "let p = new Promise(function(resolve, reject) {})",
+    "explanation": "Promises are created with new Promise().",
+    "example": "let p = new Promise((resolve, reject) => { resolve(1); });"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "In JavaScript, '==' and '===' do the same thing.",
+    "answer": false,
+    "explanation": "== is loose equality; === is strict equality.",
+    "example": "1 == '1' // true; 1 === '1' // false"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which built-in object allows you to perform mathematical tasks?",
+    "options": [
+      "Math",
+      "Number",
+      "Calculator",
+      "Algebra"
+    ],
+    "answer": "Math",
+    "explanation": "The Math object provides properties and methods for mathematical constants and functions.",
+    "example": "Math.sqrt(16); // 4"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "The 'forEach()' method returns a new array.",
+    "answer": false,
+    "explanation": "forEach() executes a function for each array element but returns undefined.",
+    "example": "[1,2,3].forEach(x => console.log(x));"
+  },
+
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "How can you write an immediately-invoked function expression (IIFE)?",
+    "options": [
+      "function() {}();",
+      "(function() {})();",
+      "function() {}",
+      "(() => {});"
+    ],
+    "answer": "(function() {})();",
+    "explanation": "Wrapping a function in parentheses and invoking it calls it immediately.",
+    "example": "(function(){console.log('IIFE');})();"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "A JavaScript object can have methods (functions as properties).",
+    "answer": true,
+    "explanation": "Objects can store data and functions.",
+    "example": "let obj = { greet: function() { return 'hi'; } };"
+  },
+  {
+    "type": "mcq",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which string method returns the position of the first occurrence of a specified value?",
+    "options": [
+      "find()",
+      "indexOf()",
+      "locate()",
+      "search()"
+    ],
+    "answer": "indexOf()",
+    "explanation": "indexOf() returns the position of the substring.",
+    "example": "'hello'.indexOf('e'); // 1"
+  },
+  {
+    "type": "true_false",
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "You can chain multiple array methods together in JavaScript.",
+    "answer": true,
+    "explanation": "Array methods like filter, map, reduce can be chained.",
+    "example": "[1,2,3].filter(x => x>1).map(x => x*2);"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "PHP code is executed on the server side.",
+    "answer": true,
+    "explanation": "PHP is a server-side scripting language; the code runs on the server and outputs HTML.",
+    "example": "<?php echo 'Hello, world!'; ?>"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which symbol is used to start a variable in PHP?",
+    "options": ["&", "#", "$", "%"],
+    "answer": "$",
+    "explanation": "All PHP variables start with the $ sign.",
+    "example": "$name = 'John';"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "The extension for a PHP file is usually .php.",
+    "answer": true,
+    "explanation": "PHP files typically use the .php file extension.",
+    "example": "index.php"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "How do you write a single-line comment in PHP?",
+    "options": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "PHP supports //, #, and /* ... */ for comments.",
+    "example": "// single line, # single line, /* multi-line */"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "PHP can be embedded inside HTML code.",
+    "answer": true,
+    "explanation": "PHP code is often embedded in HTML using <?php ... ?> tags.",
+    "example": "<h1><?php echo 'Title'; ?></h1>"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which function outputs text to the browser in PHP?",
+    "options": ["print()", "write()", "echo", "console.log()"],
+    "answer": "echo",
+    "explanation": "echo outputs one or more strings.",
+    "example": "<?php echo 'Hello!'; ?>"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "PHP is a case-sensitive language for variable names.",
+    "answer": true,
+    "explanation": "$Name and $name are different variables in PHP.",
+    "example": "$x = 5; $X = 10;"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "How do you concatenate strings in PHP?",
+    "options": ["+", ".", "&", "concat()"],
+    "answer": ".",
+    "explanation": "PHP uses the dot (.) operator to concatenate strings.",
+    "example": "$greeting = 'Hello' . ' world!';"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "The function isset() checks if a variable is set and is not NULL.",
+    "answer": true,
+    "explanation": "isset() returns true if the variable exists and is not null.",
+    "example": "isset($name)"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which superglobal array is used to collect form data sent with POST?",
+    "options": ["$_POST", "$POST", "POST", "get_post()"],
+    "answer": "$_POST",
+    "explanation": "$_POST contains form data sent via HTTP POST.",
+    "example": "$username = $_POST['username'];"
+  },
+
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "MySQL is a relational database management system.",
+    "answer": true,
+    "explanation": "MySQL is an open-source RDBMS that uses SQL for managing data.",
+    "example": "CREATE TABLE users (id INT, name VARCHAR(50));"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "Which SQL statement is used to extract data from a database?",
+    "options": ["GET", "SELECT", "PULL", "EXTRACT"],
+    "answer": "SELECT",
+    "explanation": "SELECT is used to fetch data from a database.",
+    "example": "SELECT * FROM students;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "A primary key must have unique values.",
+    "answer": true,
+    "explanation": "Primary keys uniquely identify rows in a table.",
+    "example": "id INT PRIMARY KEY"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "Which symbol is used for a wildcard in a SQL LIKE query?",
+    "options": ["#", "*", "%", "_"],
+    "answer": "%",
+    "explanation": "% matches zero or more characters in LIKE queries.",
+    "example": "SELECT * FROM users WHERE name LIKE 'J%';"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "The SQL command to remove a table is DROP TABLE.",
+    "answer": true,
+    "explanation": "DROP TABLE permanently deletes the table and its data.",
+    "example": "DROP TABLE orders;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "Which command is used to add a new row to a table?",
+    "options": ["INSERT INTO", "ADD ROW", "UPDATE", "APPEND"],
+    "answer": "INSERT INTO",
+    "explanation": "INSERT INTO adds a new row.",
+    "example": "INSERT INTO books (title) VALUES ('PHP for Beginners');"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "In SQL, NULL is the same as zero.",
+    "answer": false,
+    "explanation": "NULL means no value, while zero is a number.",
+    "example": "SELECT * FROM items WHERE price IS NULL;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "What is the default port number for MySQL?",
+    "options": ["1433", "8080", "3306", "1521"],
+    "answer": "3306",
+    "explanation": "MySQL uses TCP port 3306 by default.",
+    "example": "mysql -u root -p --port=3306"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "The UPDATE statement is used to modify data in a table.",
+    "answer": true,
+    "explanation": "UPDATE changes existing data in one or more rows.",
+    "example": "UPDATE users SET name='Jane' WHERE id=2;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Easy",
+    "question": "Which clause is used to sort the result set in SQL?",
+    "options": ["ORDER BY", "GROUP BY", "SORT", "ARRANGE"],
+    "answer": "ORDER BY",
+    "explanation": "ORDER BY sorts the result rows.",
+    "example": "SELECT * FROM sales ORDER BY date DESC;"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The 'include' statement in PHP is used to insert the content of one PHP file into another.",
+    "answer": true,
+    "explanation": "'include' allows code reuse by inserting files.",
+    "example": "<?php include 'header.php'; ?>"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function is used to get the length of a string in PHP?",
+    "options": ["length()", "strlen()", "count()", "sizeof()"],
+    "answer": "strlen()",
+    "explanation": "strlen() returns the number of characters in a string.",
+    "example": "strlen('hello'); // 5"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Variables declared inside a function are available outside the function in PHP.",
+    "answer": false,
+    "explanation": "Function variables have local scope in PHP.",
+    "example": "function f() { $x = 1; } // $x is not accessible outside"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which PHP function is used to connect to a MySQL database?",
+    "options": ["mysql_connect()", "mysqli_connect()", "pdo_connect()", "connect_db()"],
+    "answer": "mysqli_connect()",
+    "explanation": "mysqli_connect() is the improved function for MySQL connections.",
+    "example": "$conn = mysqli_connect('localhost', 'root', '', 'db');"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "PHP can read and write files on the server.",
+    "answer": true,
+    "explanation": "PHP functions like fopen(), fread(), fwrite() allow file I/O.",
+    "example": "$handle = fopen('file.txt', 'r');"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "How do you declare a constant in PHP?",
+    "options": [
+      "const PI = 3.14;",
+      "define('PI', 3.14);",
+      "constant PI = 3.14;",
+      "let PI = 3.14;"
+    ],
+    "answer": "define('PI', 3.14);",
+    "explanation": "define() is used for declaring constants in PHP.",
+    "example": "define('SITE_NAME', 'My Site');"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "PHP supports both single and double quotes for string literals.",
+    "answer": true,
+    "explanation": "Both 'hello' and \"hello\" are valid in PHP.",
+    "example": "$a = 'hi'; $b = \"hello\";"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "What does $_SERVER['PHP_SELF'] return?",
+    "options": [
+      "The name of the PHP script currently executing",
+      "The server's PHP version",
+      "The client's IP address",
+      "The full URL of the page"
+    ],
+    "answer": "The name of the PHP script currently executing",
+    "explanation": "$_SERVER['PHP_SELF'] contains the filename of the currently executing script.",
+    "example": "echo $_SERVER['PHP_SELF'];"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The $_GET superglobal is used to collect data sent in the URL query string.",
+    "answer": true,
+    "explanation": "$_GET receives data sent via HTTP GET.",
+    "example": "example.com/index.php?name=John ($_GET['name'] == 'John')"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which operator checks for both value and type equality in PHP?",
+    "options": ["==", "===", "=", "eq"],
+    "answer": "===",
+    "explanation": "=== checks both type and value equality.",
+    "example": "3 === '3' // false"
+  },
+
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "A table can have more than one primary key in MySQL.",
+    "answer": false,
+    "explanation": "A table can have only one primary key, but it can consist of multiple columns (composite key).",
+    "example": "PRIMARY KEY (id, username)"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "Which SQL statement is used to update data in a database?",
+    "options": ["SET", "UPDATE", "MODIFY", "CHANGE"],
+    "answer": "UPDATE",
+    "explanation": "UPDATE is used to change data in rows.",
+    "example": "UPDATE users SET name='Mark' WHERE id=5;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "An index in MySQL speeds up SELECT queries.",
+    "answer": true,
+    "explanation": "Indexes improve the speed of data retrieval.",
+    "example": "CREATE INDEX idx_name ON users(name);"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "What is the purpose of the SQL 'GROUP BY' clause?",
+    "options": [
+      "To group results by columns",
+      "To remove duplicates",
+      "To join two tables",
+      "To sort results"
+    ],
+    "answer": "To group results by columns",
+    "explanation": "GROUP BY groups rows that have the same values in specified columns.",
+    "example": "SELECT COUNT(*), city FROM users GROUP BY city;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "The SQL command ALTER TABLE is used to add, delete, or modify columns.",
+    "answer": true,
+    "explanation": "ALTER TABLE changes the structure of an existing table.",
+    "example": "ALTER TABLE users ADD email VARCHAR(50);"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "Which statement is used to remove all records from a table but not the table itself?",
+    "options": ["REMOVE", "DROP", "DELETE", "TRUNCATE"],
+    "answer": "TRUNCATE",
+    "explanation": "TRUNCATE removes all rows but leaves the table structure.",
+    "example": "TRUNCATE TABLE logs;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "The COUNT() function in SQL returns the number of rows that matches a specified condition.",
+    "answer": true,
+    "explanation": "COUNT() counts rows in a result set.",
+    "example": "SELECT COUNT(*) FROM users;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "What does the SQL 'JOIN' clause do?",
+    "options": [
+      "Combines rows from two or more tables",
+      "Deletes data",
+      "Changes column names",
+      "Sorts results"
+    ],
+    "answer": "Combines rows from two or more tables",
+    "explanation": "JOIN combines data from multiple tables based on related columns.",
+    "example": "SELECT * FROM orders JOIN customers ON orders.customer_id = customers.id;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "A foreign key in a table is used to link it to another table.",
+    "answer": true,
+    "explanation": "Foreign keys enforce referential integrity between tables.",
+    "example": "FOREIGN KEY (user_id) REFERENCES users(id)"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Medium",
+    "question": "Which SQL clause is used to filter results based on a condition?",
+    "options": ["WHERE", "IF", "HAVING", "SELECT"],
+    "answer": "WHERE",
+    "explanation": "WHERE restricts which rows are returned.",
+    "example": "SELECT * FROM products WHERE price > 100;"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "In PHP, objects are created using the 'new' keyword.",
+    "answer": true,
+    "explanation": "Objects are created from classes using 'new'.",
+    "example": "$car = new Car();"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which function is used to end a script in PHP?",
+    "options": ["exit()", "stop()", "break()", "end()"],
+    "answer": "exit()",
+    "explanation": "exit() ends the execution of the script.",
+    "example": "if ($error) { exit('Error!'); }"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "PHP supports multiple inheritance directly.",
+    "answer": false,
+    "explanation": "PHP does not support multiple inheritance, but supports interfaces and traits.",
+    "example": "class A {} class B {} class C extends A, B {} // Invalid"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "How do you start a session in PHP?",
+    "options": [
+      "session_begin()",
+      "start_session()",
+      "session_start()",
+      "begin_session()"
+    ],
+    "answer": "session_start()",
+    "explanation": "session_start() is used to initiate a session.",
+    "example": "<?php session_start(); ?>"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "A PHP interface can have implemented methods.",
+    "answer": false,
+    "explanation": "Interfaces can only declare method signatures, not implementations.",
+    "example": "interface A { public function foo(); }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which keyword is used to inherit a class in PHP?",
+    "options": ["inherits", "extends", "implements", "inheritsfrom"],
+    "answer": "extends",
+    "explanation": "A class is inherited using the extends keyword.",
+    "example": "class Child extends Parent {}"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "The function json_encode() is used to decode a JSON string.",
+    "answer": false,
+    "explanation": "json_encode() encodes data to JSON; json_decode() decodes it.",
+    "example": "$arr = json_decode($json);"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which magic method is called when an object is serialized in PHP?",
+    "options": ["__wakeup()", "__serialize()", "__construct()", "__sleep()"],
+    "answer": "__sleep()",
+    "explanation": "__sleep() is called when serializing an object.",
+    "example": "public function __sleep() { return ['property']; }"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "PHP 8 introduced named arguments for function calls.",
+    "answer": true,
+    "explanation": "PHP 8 allows calling functions with named arguments.",
+    "example": "foo(y: 2, x: 1);"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT a PHP error level?",
+    "options": ["E_NOTICE", "E_WARNING", "E_DANGER", "E_ERROR"],
+    "answer": "E_DANGER",
+    "explanation": "E_DANGER does not exist as an error level in PHP.",
+    "example": "error_reporting(E_ALL);"
+  },
+
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "The AUTO_INCREMENT attribute is used to generate unique values automatically for a column.",
+    "answer": true,
+    "explanation": "AUTO_INCREMENT auto-increments integer values, often used for primary keys.",
+    "example": "id INT AUTO_INCREMENT PRIMARY KEY"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "Which SQL command is used to create a new database?",
+    "options": ["CREATE DATABASE", "NEW DATABASE", "MAKE DATABASE", "INIT DATABASE"],
+    "answer": "CREATE DATABASE",
+    "explanation": "CREATE DATABASE creates a new database.",
+    "example": "CREATE DATABASE testdb;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "The UNION operator combines the result of two SELECT statements and removes duplicates.",
+    "answer": true,
+    "explanation": "UNION combines results and removes duplicate rows.",
+    "example": "SELECT name FROM a UNION SELECT name FROM b;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "What is a stored procedure in MySQL?",
+    "options": [
+      "A SQL statement to backup data",
+      "A precompiled SQL statement saved in the database",
+      "A type of primary key",
+      "A column constraint"
+    ],
+    "answer": "A precompiled SQL statement saved in the database",
+    "explanation": "Stored procedures are reusable blocks of SQL code stored in the database.",
+    "example": "CREATE PROCEDURE myProc() BEGIN SELECT * FROM users; END;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "The SQL keyword DISTINCT returns only unique values.",
+    "answer": true,
+    "explanation": "DISTINCT eliminates duplicate rows from the result set.",
+    "example": "SELECT DISTINCT city FROM customers;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "Which command is used to permanently remove a database in MySQL?",
+    "options": ["REMOVE DATABASE", "DELETE DATABASE", "DROP DATABASE", "TRUNCATE DATABASE"],
+    "answer": "DROP DATABASE",
+    "explanation": "DROP DATABASE deletes a database and all its data.",
+    "example": "DROP DATABASE shopdb;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "The HAVING clause can be used without GROUP BY.",
+    "answer": false,
+    "explanation": "HAVING is designed to filter groups created by GROUP BY.",
+    "example": "SELECT city, COUNT(*) FROM users GROUP BY city HAVING COUNT(*) > 5;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "Which SQL keyword is used to prevent duplicate rows from appearing in a result?",
+    "options": ["ONLY", "DISTINCT", "UNIQUE", "LIMIT"],
+    "answer": "DISTINCT",
+    "explanation": "DISTINCT returns only unique values.",
+    "example": "SELECT DISTINCT name FROM users;"
+  },
+  {
+    "type": "true_false",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "A view in MySQL is a virtual table based on the result of a SELECT statement.",
+    "answer": true,
+    "explanation": "A view is stored as a SQL query and appears as a table to users.",
+    "example": "CREATE VIEW active_users AS SELECT * FROM users WHERE active=1;"
+  },
+  {
+    "type": "mcq",
+    "category": "MySQL",
+    "difficulty": "Hard",
+    "question": "Which SQL keyword is used to set a default value for a column?",
+    "options": ["DEFAULT", "VALUE", "SET DEFAULT", "INITIAL"],
+    "answer": "DEFAULT",
+    "explanation": "DEFAULT sets a default value for a column.",
+    "example": "age INT DEFAULT 18"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "PHP code must be enclosed within <?php and ?> tags.",
+    "answer": true,
+    "explanation": "PHP code always starts with <?php and ends with ?>.",
+    "example": "<?php echo 'Hello, World!'; ?>"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which function is used to get the type of a variable in PHP?",
+    "options": ["typeOf()", "gettype()", "typeof()", "vartype()"],
+    "answer": "gettype()",
+    "explanation": "gettype() returns the data type of a variable.",
+    "example": "echo gettype(5); // integer"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "A PHP variable name can begin with a number.",
+    "answer": false,
+    "explanation": "Variable names must start with a letter or underscore.",
+    "example": "$1value = 10; // Invalid"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which of the following is used to output data in PHP?",
+    "options": ["echo", "write", "print", "output"],
+    "answer": "echo",
+    "explanation": "echo outputs data to the browser.",
+    "example": "echo 'PHP!';"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "The .php file extension is required for files containing PHP code.",
+    "answer": true,
+    "explanation": ".php extension ensures code is processed as PHP on the server.",
+    "example": "index.php"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "Which operator is used for string concatenation in PHP?",
+    "options": [".", "+", "&", ","],
+    "answer": ".",
+    "explanation": "The dot (.) is used for concatenation.",
+    "example": "'Hello' . ' World!'"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "The isset() function checks if a variable exists and is not NULL.",
+    "answer": true,
+    "explanation": "isset() returns true if the variable exists and isn't NULL.",
+    "example": "isset($x)"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "How do you write a multi-line comment in PHP?",
+    "options": ["# comment", "/* comment */", "// comment", "<!-- comment -->"],
+    "answer": "/* comment */",
+    "explanation": "/* ... */ is used for multi-line comments.",
+    "example": "/* This is a\nmulti-line comment */"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "PHP is loosely typed.",
+    "answer": true,
+    "explanation": "Variables do not have to be declared before assignment.",
+    "example": "$x = 10;"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Easy",
+    "question": "What does the count() function return for an array?",
+    "options": ["The last element", "The number of elements", "The array length", "The first element"],
+    "answer": "The number of elements",
+    "explanation": "count() returns the number of elements.",
+    "example": "count([1,2,3]) // 3"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Arrays in PHP can be indexed or associative.",
+    "answer": true,
+    "explanation": "PHP supports both types of arrays.",
+    "example": "$a = [1,2,3]; $b = ['one'=>1, 'two'=>2];"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function returns the number of characters in a string?",
+    "options": ["strcount()", "strlen()", "countstr()", "numchar()"],
+    "answer": "strlen()",
+    "explanation": "strlen() counts string characters.",
+    "example": "strlen('hello') // 5"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The function array_push() adds elements to the end of an array.",
+    "answer": true,
+    "explanation": "array_push() appends elements.",
+    "example": "array_push($a, 4);"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which global variable contains information about headers, paths, and script locations?",
+    "options": ["$_GLOBALS", "$GLOBALS", "$_SERVER", "$_INFO"],
+    "answer": "$_SERVER",
+    "explanation": "$_SERVER is a superglobal with server and execution info.",
+    "example": "echo $_SERVER['PHP_SELF'];"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The function include() will produce a fatal error if the file is not found.",
+    "answer": false,
+    "explanation": "include() only emits a warning; require() gives a fatal error.",
+    "example": "include('nofile.php'); // warning"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function is used to remove whitespace from both sides of a string?",
+    "options": ["strip()", "trim()", "remove()", "cut()"],
+    "answer": "trim()",
+    "explanation": "trim() strips whitespace from both ends.",
+    "example": "trim('  test  ') // 'test'"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The explode() function splits a string into an array.",
+    "answer": true,
+    "explanation": "explode(delimiter, string) breaks a string by delimiter.",
+    "example": "explode(',', 'a,b,c') // ['a','b','c']"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which operator checks for both value and type?",
+    "options": ["==", "===", "=", "!=",],
+    "answer": "===",
+    "explanation": "=== is strict equality (value and type).",
+    "example": "3 === '3' // false"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "A function can return multiple values as an array.",
+    "answer": true,
+    "explanation": "Return an array to return multiple values.",
+    "example": "function foo() { return [1, 2]; }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "How do you start a session in PHP?",
+    "options": ["session_start()", "start_session()", "begin_session()", "session()"],
+    "answer": "session_start()",
+    "explanation": "session_start() begins/resumes a session.",
+    "example": "<?php session_start(); ?>"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "PHP functions can have default parameter values.",
+    "answer": true,
+    "explanation": "Provide a default value in the function definition.",
+    "example": "function foo($x = 5) { return $x; }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function checks if a file exists?",
+    "options": ["exists()", "file_exists()", "check_file()", "file_check()"],
+    "answer": "file_exists()",
+    "explanation": "file_exists() checks if a file exists on disk.",
+    "example": "file_exists('test.txt')"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "require_once includes a file only once, even if called multiple times.",
+    "answer": true,
+    "explanation": "require_once prevents multiple inclusions.",
+    "example": "require_once 'lib.php';"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function is used to hash a string?",
+    "options": ["crypt()", "md5()", "sha1()", "All of the above"],
+    "answer": "All of the above",
+    "explanation": "All listed functions can hash strings.",
+    "example": "md5('test')"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "The 'global' keyword allows a function to access global variables.",
+    "answer": true,
+    "explanation": "Use global $var inside a function.",
+    "example": "$x = 1; function f(){ global $x; }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a PHP superglobal?",
+    "options": ["$_POST", "$_GET", "$_SESSION", "$_MAIN"],
+    "answer": "$_MAIN",
+    "explanation": "There is no $_MAIN in PHP.",
+    "example": "Superglobals: $_POST, $_GET, $_SESSION, $_COOKIE, $_SERVER, etc."
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "PHP supports both procedural and object-oriented programming.",
+    "answer": true,
+    "explanation": "You can write OOP or procedural code in PHP.",
+    "example": "// class Foo {} and function foo() {}"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which keyword is used to create a class?",
+    "options": ["struct", "class", "object", "define"],
+    "answer": "class",
+    "explanation": "Use 'class' to declare a class.",
+    "example": "class Animal { }"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "In PHP, arrays can hold elements of different types.",
+    "answer": true,
+    "explanation": "Arrays can contain strings, numbers, objects, etc.",
+    "example": "$a = [1, 'b', true];"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Medium",
+    "question": "Which function is used to remove an element from the end of an array?",
+    "options": ["array_pop()", "array_push()", "array_shift()", "array_unshift()"],
+    "answer": "array_pop()",
+    "explanation": "array_pop() removes the last element.",
+    "example": "array_pop($a);"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Interfaces in PHP can have implemented methods.",
+    "answer": false,
+    "explanation": "Interfaces can only declare method signatures.",
+    "example": "interface Foo { public function bar(); }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "What is the correct way to define a constant in PHP?",
+    "options": [
+      "const PI = 3.14;",
+      "define('PI', 3.14);",
+      "constant PI = 3.14;",
+      "$PI = 3.14;"
+    ],
+    "answer": "define('PI', 3.14);",
+    "explanation": "define() declares a constant in PHP.",
+    "example": "define('SITE', 'example.com');"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "A class can implement multiple interfaces.",
+    "answer": true,
+    "explanation": "PHP supports multiple interfaces using commas.",
+    "example": "class Foo implements A, B { }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which function is used to serialize a value?",
+    "options": ["serialize()", "json_encode()", "pack()", "stringify()"],
+    "answer": "serialize()",
+    "explanation": "serialize() converts a PHP value to a storable string.",
+    "example": "serialize($a);"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "The magic method __construct() is called when an object is created.",
+    "answer": true,
+    "explanation": "__construct() is the constructor.",
+    "example": "function __construct() { }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "How do you declare an abstract class?",
+    "options": ["abstract class", "class abstract", "class ... abstract", "define abstract"],
+    "answer": "abstract class",
+    "explanation": "'abstract class' is the correct syntax.",
+    "example": "abstract class Base { }"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "The 'final' keyword prevents a class from being inherited.",
+    "answer": true,
+    "explanation": "final classes cannot be extended.",
+    "example": "final class MyClass { }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which function is used to decode a JSON string into a PHP variable?",
+    "options": ["json_decode()", "json_encode()", "decode_json()", "unserialize()"],
+    "answer": "json_decode()",
+    "explanation": "json_decode() converts JSON to PHP.",
+    "example": "json_decode('{\"a\":1}')"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Traits in PHP allow for code reuse across classes.",
+    "answer": true,
+    "explanation": "Traits enable horizontal code reuse.",
+    "example": "trait MyTrait { }"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "What does the magic method __toString() do?",
+    "options": [
+      "Converts an object to an array",
+      "Converts an object to a string",
+      "Serializes the object",
+      "Casts to boolean"
+    ],
+    "answer": "Converts an object to a string",
+    "explanation": "__toString() is called when an object is treated as a string.",
+    "example": "public function __toString() { return 'text'; }"
+  },
+
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Static properties belong to the class, not to objects.",
+    "answer": true,
+    "explanation": "Static properties are shared across all instances.",
+    "example": "public static $count = 0;"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Which function returns all keys of an array?",
+    "options": ["array_keys()", "keys()", "get_keys()", "array_get_keys()"],
+    "answer": "array_keys()",
+    "explanation": "array_keys() returns all keys.",
+    "example": "array_keys(['a'=>1,'b'=>2])"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "Closures in PHP can access variables from their parent scope.",
+    "answer": true,
+    "explanation": "Use 'use' keyword to inherit variables.",
+    "example": "$a = 1; $f = function() use ($a) { };"
+  },
+  {
+    "type": "mcq",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "How do you access a static property?",
+    "options": [
+      "$object->property",
+      "$object::property",
+      "Class::$property",
+      "Class->property"
+    ],
+    "answer": "Class::$property",
+    "explanation": "Use ClassName::$property for static properties.",
+    "example": "MyClass::$value"
+  },
+  {
+    "type": "true_false",
+    "category": "PHP",
+    "difficulty": "Hard",
+    "question": "You can override a parent class method in a child class.",
+    "answer": true,
+    "explanation": "Child classes can redefine parent methods.",
+    "example": "class B extends A { function foo(){} }"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Python is an interpreted language.",
+    "answer": true,
+    "explanation": "Python code is executed line by line by the interpreter.",
+    "example": "print('Hello, world!')"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which symbol is used to start a comment in Python?",
+    "options": ["//", "#", "/*", "--"],
+    "answer": "#",
+    "explanation": "The # symbol starts a comment in Python.",
+    "example": "# This is a comment"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "In Python, indentation is required for defining code blocks.",
+    "answer": true,
+    "explanation": "Indentation is used to define blocks such as functions and loops.",
+    "example": "def hello():\n    print('Hi')"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": ["2abc", "my_var", "my-var", "my var"],
+    "answer": "my_var",
+    "explanation": "Variable names cannot start with a number or contain spaces/hyphens.",
+    "example": "my_var = 10"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Python uses curly braces {} to define code blocks.",
+    "answer": false,
+    "explanation": "Python uses indentation, not braces.",
+    "example": "# Indentation, not braces"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which function is used to get input from the user?",
+    "options": ["input()", "scan()", "get()", "read()"],
+    "answer": "input()",
+    "explanation": "input() reads user input as a string.",
+    "example": "name = input('Enter your name: ')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Lists in Python are mutable.",
+    "answer": true,
+    "explanation": "Lists can be changed after creation.",
+    "example": "lst = [1,2,3]\nlst.append(4)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What is the output of print(2 ** 3)?",
+    "options": ["6", "8", "9", "23"],
+    "answer": "8",
+    "explanation": "** is the exponentiation operator (2 to the power of 3).",
+    "example": "print(2 ** 3) # 8"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The function len() returns the number of items in a list.",
+    "answer": true,
+    "explanation": "len() gives the number of elements in a collection.",
+    "example": "len([1,2,3]) # 3"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which data type is used to store True or False values?",
+    "options": ["str", "bool", "int", "float"],
+    "answer": "bool",
+    "explanation": "bool type represents Boolean values True or False.",
+    "example": "flag = True"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The '==' operator checks for value equality in Python.",
+    "answer": true,
+    "explanation": "'==' compares the values of two objects.",
+    "example": "3 == 3.0 # True"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What is the correct file extension for Python files?",
+    "options": [".python", ".py", ".pt", ".p"],
+    "answer": ".py",
+    "explanation": "Python source files end with .py.",
+    "example": "script.py"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "You can use both single and double quotes to define strings in Python.",
+    "answer": true,
+    "explanation": "'Hello' and \"Hello\" are both valid strings.",
+    "example": "'hello', \"hello\""
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which keyword is used to create a function in Python?",
+    "options": ["def", "function", "func", "define"],
+    "answer": "def",
+    "explanation": "def defines a function.",
+    "example": "def foo():\n    pass"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Dictionaries in Python are ordered collections as of Python 3.7+.",
+    "answer": true,
+    "explanation": "In Python 3.7 and later, dict preserves insertion order.",
+    "example": "d = {'a':1, 'b':2} # Order is kept"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "How do you start a for loop in Python?",
+    "options": [
+      "for i to 10:",
+      "for i in range(10):",
+      "for (i = 0; i < 10; i++):",
+      "loop i in range(10):"
+    ],
+    "answer": "for i in range(10):",
+    "explanation": "Use 'for variable in iterable:' for loops.",
+    "example": "for i in range(10):\n    print(i)"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Tuples are mutable in Python.",
+    "answer": false,
+    "explanation": "Tuples cannot be changed after creation.",
+    "example": "t = (1,2,3)\n# t[0] = 5 # Error"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which method removes the last item from a list?",
+    "options": ["remove()", "pop()", "del()", "cut()"],
+    "answer": "pop()",
+    "explanation": "pop() removes and returns the last item.",
+    "example": "lst = [1,2,3]\nlst.pop() # 3"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Python supports multiple inheritance.",
+    "answer": true,
+    "explanation": "A class can inherit from more than one parent class.",
+    "example": "class A: pass\nclass B: pass\nclass C(A, B): pass"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which function converts a string to an integer in Python?",
+    "options": ["str()", "int()", "float()", "to_int()"],
+    "answer": "int()",
+    "explanation": "int('3') returns 3 as an integer.",
+    "example": "int('3') # 3"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "The 'with' statement is used for exception handling.",
+    "answer": false,
+    "explanation": "'with' is used for context management, like opening files.",
+    "example": "with open('file.txt') as f:\n    data = f.read()"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which of the following creates a list of numbers from 0 to 4?",
+    "options": [
+      "range(0,5)",
+      "range(5)",
+      "list(range(5))",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "range(5) gives 0-4, list() converts it to a list.",
+    "example": "list(range(5)) # [0,1,2,3,4]"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "The 'pass' statement does nothing when executed.",
+    "answer": true,
+    "explanation": "'pass' is used as a placeholder.",
+    "example": "def foo():\n    pass"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "How do you import the 'math' module in Python?",
+    "options": [
+      "include math",
+      "import math",
+      "use math",
+      "require math"
+    ],
+    "answer": "import math",
+    "explanation": "Use 'import' to load modules.",
+    "example": "import math"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "In Python, '==' and 'is' always return the same result.",
+    "answer": false,
+    "explanation": "'==' checks value, 'is' checks identity.",
+    "example": "a = [1]; b = [1]; a == b # True; a is b # False"
+  },
+
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What is the output of print(type([]))?",
+    "options": [
+      "<class 'list'>",
+      "<list>",
+      "<type 'list'>",
+      "list"
+    ],
+    "answer": "<class 'list'>",
+    "explanation": "type([]) returns <class 'list'>.",
+    "example": "print(type([])) # <class 'list'>"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Python uses dynamic typing.",
+    "answer": true,
+    "explanation": "Variable types are determined at runtime.",
+    "example": "x = 5\nx = 'hello'"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which function gives the absolute value of a number?",
+    "options": ["abs()", "absolute()", "fabs()", "math.abs()"],
+    "answer": "abs()",
+    "explanation": "abs(-3) returns 3.",
+    "example": "abs(-7) # 7"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "A Python set can have duplicate elements.",
+    "answer": false,
+    "explanation": "Sets are collections of unique elements.",
+    "example": "s = {1,2,2} # {1,2}"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "How do you create a dictionary in Python?",
+    "options": [
+      "{'a':1, 'b':2}",
+      "dict(a=1, b=2)",
+      "Both of the above",
+      "['a', 1, 'b', 2]"
+    ],
+    "answer": "Both of the above",
+    "explanation": "Dictionaries can be created with {} or dict().",
+    "example": "d = {'x': 5}; d2 = dict(y=6)"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "A generator in Python can be created with a function using the 'yield' keyword.",
+    "answer": true,
+    "explanation": "yield allows functions to return generators.",
+    "example": "def gen():\n    yield 1"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which keyword is used to handle exceptions in Python?",
+    "options": ["try", "except", "catch", "finally"],
+    "answer": "except",
+    "explanation": "except handles exceptions raised in try blocks.",
+    "example": "try:\n    1/0\nexcept ZeroDivisionError:\n    print('Error')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Lambda functions can contain multiple statements.",
+    "answer": false,
+    "explanation": "Lambdas can only have a single expression.",
+    "example": "f = lambda x: x*2"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which built-in function is used to get the Unicode code of a character?",
+    "options": ["chr()", "ord()", "ascii()", "unicode()"],
+    "answer": "ord()",
+    "explanation": "ord('A') returns 65.",
+    "example": "ord('B') # 66"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Decorators in Python are used to modify functions or methods.",
+    "answer": true,
+    "explanation": "Decorators wrap functions to extend their behavior.",
+    "example": "@my_decorator\ndef func():\n    pass"
+  },
+
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What is the output of: print([i for i in range(3)])?",
+    "options": ["[0, 1, 2]", "[1, 2, 3]", "[0, 1, 2, 3]", "0 1 2"],
+    "answer": "[0, 1, 2]",
+    "explanation": "List comprehensions produce a new list.",
+    "example": "print([i for i in range(3)]) # [0,1,2]"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "A Python function can return multiple values separated by commas.",
+    "answer": true,
+    "explanation": "Multiple values are returned as a tuple.",
+    "example": "def f():\n    return 1, 2"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which module is used for regular expressions in Python?",
+    "options": ["re", "regex", "regexp", "pattern"],
+    "answer": "re",
+    "explanation": "The 're' module provides regex support.",
+    "example": "import re\nre.match('a', 'abc')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "The 'global' keyword allows you to modify a global variable inside a function.",
+    "answer": true,
+    "explanation": "'global' refers to variables at the module level.",
+    "example": "x = 1\ndef f():\n    global x\n    x = 2"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which is the correct syntax to open a file for reading?",
+    "options": [
+      "open('file.txt', 'w')",
+      "open('file.txt', 'r')",
+      "open('file.txt', 'a')",
+      "open('file.txt', 'x')"
+    ],
+    "answer": "open('file.txt', 'r')",
+    "explanation": "'r' mode opens a file for reading.",
+    "example": "with open('file.txt', 'r') as f:\n    data = f.read()"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "All Python objects are passed by reference.",
+    "answer": "true",
+    "explanation": "Objects are passed by reference (but immutable objects behave like value types).",
+    "example": "def f(lst): lst.append(5)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which special method is called when an object is created?",
+    "options": ["__init__", "__call__", "__new__", "__create__"],
+    "answer": "__init__",
+    "explanation": "__init__ initializes a new object.",
+    "example": "class A:\n    def __init__(self):\n        pass"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "In Python, 'None' is equivalent to zero.",
+    "answer": false,
+    "explanation": "'None' represents the absence of value, not zero.",
+    "example": "x = None"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which of the following will raise a ZeroDivisionError?",
+    "options": ["10/0", "10//0", "Both of the above", "10*0"],
+    "answer": "Both of the above",
+    "explanation": "Both / and // raise ZeroDivisionError if denominator is 0.",
+    "example": "10/0  # Error"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "You can change the value of a string in Python after it's created.",
+    "answer": false,
+    "explanation": "Strings are immutable in Python.",
+    "example": "s = 'hi'; s[0] = 'H' # Error"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The print() function can output multiple items separated by commas.",
+    "answer": true,
+    "explanation": "Multiple values in print() are separated by spaces.",
+    "example": "print('a', 1, True) # a 1 True"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which keyword is used to define a class in Python?",
+    "options": ["class", "define", "object", "struct"],
+    "answer": "class",
+    "explanation": "Use 'class' to define a new class.",
+    "example": "class Dog:\n    pass"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "By default, input() returns a string.",
+    "answer": true,
+    "explanation": "User input is always returned as a string unless converted.",
+    "example": "n = input(); type(n) # <class 'str'>"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What is the correct syntax to check if x equals 10?",
+    "options": ["x = 10", "x == 10", "x := 10", "x === 10"],
+    "answer": "x == 10",
+    "explanation": "'==' checks for equality in Python.",
+    "example": "if x == 10:\n    print('Ten')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The 'elif' keyword is used for 'else if' conditions.",
+    "answer": true,
+    "explanation": "Python uses 'elif' as a contraction for 'else if'.",
+    "example": "if x > 0:\n    pass\nelif x == 0:\n    pass"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which operator is used for floor division?",
+    "options": ["/", "//", "%", "**"],
+    "answer": "//",
+    "explanation": "// divides and rounds down to the nearest integer.",
+    "example": "7 // 2 # 3"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The 'break' keyword is used to exit a loop.",
+    "answer": true,
+    "explanation": "'break' stops a loop immediately.",
+    "example": "for i in range(10):\n    if i == 5:\n        break"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "What will be the output of print(type('5'))?",
+    "options": ["<class 'int'>", "<class 'str'>", "<class 'number'>", "str"],
+    "answer": "<class 'str'>",
+    "explanation": "String literals are of type str.",
+    "example": "print(type('5'))"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "The 'continue' keyword skips the rest of the code inside the loop for the current iteration.",
+    "answer": true,
+    "explanation": "'continue' moves to the next loop iteration.",
+    "example": "for i in range(5):\n    if i == 2:\n        continue\n    print(i)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Easy",
+    "question": "Which symbol is used for the logical 'and' in Python?",
+    "options": ["and", "&&", "&", "AND"],
+    "answer": "and",
+    "explanation": "Python uses the word 'and' for logical AND.",
+    "example": "if a > 0 and b > 0:\n    print('Both positive')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "You can nest functions inside other functions in Python.",
+    "answer": true,
+    "explanation": "Inner functions are valid and used in closures.",
+    "example": "def outer():\n    def inner():\n        pass"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which method adds an element to the end of a list?",
+    "options": ["add()", "append()", "insert()", "extend()"],
+    "answer": "append()",
+    "explanation": "append() adds a single element to the end.",
+    "example": "mylist = [1,2]; mylist.append(3)"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "You can use 'else' with loops in Python.",
+    "answer": true,
+    "explanation": "'else' runs if the loop finishes without a 'break'.",
+    "example": "for i in range(3):\n    pass\nelse:\n    print('Done')"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What is the output of len({'a': 1, 'b': 2})?",
+    "options": ["1", "2", "3", "0"],
+    "answer": "2",
+    "explanation": "len() on a dictionary returns the number of keys.",
+    "example": "len({'x': 1, 'y': 2}) # 2"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "The 'finally' block will always be executed after try/except.",
+    "answer": true,
+    "explanation": "finally always runs, even if an exception occurs.",
+    "example": "try:\n    1/0\nexcept:\n    pass\nfinally:\n    print('Cleanup')"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which keyword is used to inherit from a parent class?",
+    "options": ["extends", "inherits", "super", "None (just use class ParentName)"],
+    "answer": "None (just use class ParentName)",
+    "explanation": "class Child(Parent): defines inheritance.",
+    "example": "class Dog(Animal):\n    pass"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "You can iterate over a dictionary's keys using a for loop.",
+    "answer": true,
+    "explanation": "Iterating a dict by default goes over keys.",
+    "example": "for k in {'a':1, 'b':2}:\n    print(k)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "What does the split() string method return?",
+    "options": ["A list", "A tuple", "A string", "An integer"],
+    "answer": "A list",
+    "explanation": "split() splits a string into a list.",
+    "example": "'a b c'.split() # ['a','b','c']"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "List comprehensions can include if conditions.",
+    "answer": true,
+    "explanation": "You can filter results in a list comprehension.",
+    "example": "[x for x in range(5) if x%2==0] # [0,2,4]"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "How do you open a file for writing (overwrite) in Python?",
+    "options": ["'r'", "'w'", "'a'", "'rw'"],
+    "answer": "'w'",
+    "explanation": "'w' mode overwrites the file.",
+    "example": "open('file.txt', 'w')"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "You can use 'del' to remove a key from a dictionary.",
+    "answer": true,
+    "explanation": "del d['key'] removes the entry.",
+    "example": "d = {'a': 1}; del d['a']"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which method returns the index of a value in a list?",
+    "options": ["find()", "search()", "index()", "locate()"],
+    "answer": "index()",
+    "explanation": "index() returns the first index of the value.",
+    "example": "[1,2,3].index(2) # 1"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Python allows functions with default argument values.",
+    "answer": true,
+    "explanation": "You can assign default values to function parameters.",
+    "example": "def f(x=5):\n    print(x)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which keyword is used to create an anonymous function?",
+    "options": ["lambda", "anon", "def", "function"],
+    "answer": "lambda",
+    "explanation": "'lambda' creates small anonymous functions.",
+    "example": "f = lambda x: x+1"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "The 'not' keyword inverts a Boolean value.",
+    "answer": true,
+    "explanation": "'not' negates the Boolean value.",
+    "example": "not True # False"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Medium",
+    "question": "Which method can be used to add all elements of one list to another?",
+    "options": ["extend()", "append()", "insert()", "add()"],
+    "answer": "extend()",
+    "explanation": "extend() adds each element of an iterable to a list.",
+    "example": "a = [1]; b = [2,3]; a.extend(b)"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "The 'super()' function is used to call methods from a parent class.",
+    "answer": true,
+    "explanation": "super() refers to the parent class methods/attributes.",
+    "example": "class B(A):\n    def foo(self):\n        super().foo()"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What will be the output of print(bool([]))?",
+    "options": ["True", "False", "None", "Error"],
+    "answer": "False",
+    "explanation": "Empty lists evaluate as False.",
+    "example": "print(bool([])) # False"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "A class can have multiple constructors in Python.",
+    "answer": false,
+    "explanation": "A class can have only one __init__ method.",
+    "example": "class A:\n    def __init__(self): pass"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which statement will import all functions from the math module?",
+    "options": [
+      "import math.*",
+      "from math import *",
+      "include math",
+      "require math"
+    ],
+    "answer": "from math import *",
+    "explanation": "from math import * imports all names from math.",
+    "example": "from math import *"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Private variables in Python are truly hidden from outside the class.",
+    "answer": false,
+    "explanation": "Private variables are name-mangled, but accessible.",
+    "example": "self.__x # becomes _ClassName__x"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which function returns the memory address of an object?",
+    "options": ["loc()", "mem()", "id()", "ref()"],
+    "answer": "id()",
+    "explanation": "id() returns the object's memory address.",
+    "example": "print(id([]))"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "You can use the 'with' statement to handle file closing automatically.",
+    "answer": true,
+    "explanation": "'with' ensures files are closed properly.",
+    "example": "with open('a.txt') as f:\n    data = f.read()"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which method is called when an object is deleted?",
+    "options": ["__end__", "__close__", "__del__", "__delete__"],
+    "answer": "__del__",
+    "explanation": "__del__ is called on object destruction.",
+    "example": "def __del__(self):\n    print('Deleted!')"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "You can overload operators in Python using special methods.",
+    "answer": true,
+    "explanation": "Special methods like __add__ enable operator overloading.",
+    "example": "def __add__(self, other):\n    return self.val + other.val"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "What is a correct way to handle an exception?",
+    "options": [
+      "try ... except ...",
+      "try ... catch ...",
+      "catch ... except ...",
+      "handle ... error ..."
+    ],
+    "answer": "try ... except ...",
+    "explanation": "Python uses try/except for exceptions.",
+    "example": "try:\n    1/0\nexcept:\n    print('Error')"
+  },
+
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "The 'os' module provides functions to interact with the operating system.",
+    "answer": true,
+    "explanation": "os provides tools for file and process management.",
+    "example": "import os\nos.listdir('.')"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which function can be used to convert a list to a tuple?",
+    "options": ["tuple()", "list()", "set()", "convert()"],
+    "answer": "tuple()",
+    "explanation": "tuple([1,2]) returns (1,2).",
+    "example": "tuple([1,2,3])"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "A function in Python can have variable-length arguments.",
+    "answer": true,
+    "explanation": "Use *args for any number of positional arguments.",
+    "example": "def f(*args):\n    print(args)"
+  },
+  {
+    "type": "mcq",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Which method can be used to sort a list in place?",
+    "options": ["sort()", "order()", "arrange()", "sorted()"],
+    "answer": "sort()",
+    "explanation": "sort() sorts the list itself.",
+    "example": "lst = [2,1]; lst.sort()"
+  },
+  {
+    "type": "true_false",
+    "category": "Python",
+    "difficulty": "Hard",
+    "question": "Python supports anonymous (lambda) functions.",
+    "answer": true,
+    "explanation": "lambda creates small anonymous functions.",
+    "example": "f = lambda x: x**2"
   }
 ]

@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import android.text.TextUtils;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,15 +26,16 @@ public class MainActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.inputPassword);
         dbHelper = DBHelper.getInstance(this);
 
-        // Create a permanent test account
-        //createTestUser("testuser", "test123");
         ModelValidator.validateModel(MainActivity.this);
 
         greetingText = findViewById(R.id.greetingText);
         greetingText.setText("Login");
         registerText = findViewById(R.id.registerText);
         registerText.setText("New User ?");
+        List<String> tables = dbHelper.listTables();
 
+        TextView textView = findViewById(R.id.tables_view);
+        textView.setText(TextUtils.join("\n", tables));
     }
 
     private void createTestUser(String username, String password) {
@@ -44,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        String username = usernameInput.getText().toString();
-        String password = passwordInput.getText().toString();
+        String username = usernameInput.getText().toString().trim();
+        String password = passwordInput.getText().toString().trim();
+
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM users WHERE username=? AND password=?", new String[]{username, password});
@@ -54,12 +59,16 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
             Intent intent = new Intent(this, Dashboard.class);
             intent.putExtra("username", username);
+            UserStatsManager.setCurrentUsername(this, username); // Save to SharedPreferences
+
             startActivity(intent);
+
         } else {
             cursor.close();
             Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     public void register(View view) {
         startActivity(new Intent(this, Registration.class));

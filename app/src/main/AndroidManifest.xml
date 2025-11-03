@@ -32,6 +32,6 @@
         <activity android:name=".Dashboard" android:exported="false"/>
         <activity android:name=".QuizActivity" android:exported="false"/>
         <activity android:name=".UserInputActivity" android:exported="false"/>
-
+        <activity android:name=".PersonalizationActivity" android:exported="false"/>
     </application>
 </manifest>

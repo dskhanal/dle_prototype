@@ -3,6 +3,10 @@ package com.example.dle_prototype;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.database.Cursor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -34,11 +38,28 @@ public class DBHelper extends SQLiteOpenHelper {
                 "category_selected REAL" +
                 ");");
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        onCreate(db);
+        if (oldVersion < 2) {
+            db.execSQL("ALTER TABLE dle_data ADD COLUMN username TEXT;");
+        }
         db.execSQL("DROP TABLE IF EXISTS users;");
         db.execSQL("DROP TABLE IF EXISTS dle_data;");
-        onCreate(db);
+    }
+    public List<String> listTables() {
+        List<String> names = new ArrayList<>();
+        Cursor cursor = getReadableDatabase().rawQuery(
+                "SELECT name FROM sqlite_master WHERE type='table' " +
+                        "AND name NOT LIKE 'android_%' AND name NOT LIKE 'sqlite_%'",
+                null);
+        try {
+            while (cursor.moveToNext()) {
+                names.add(cursor.getString(0));
+            }
+        } finally {
+            cursor.close();
+        }
+        return names;
     }
 }

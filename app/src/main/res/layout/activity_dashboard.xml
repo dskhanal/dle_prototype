@@ -1,94 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dashboardScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FB"
+    android:background="@android:color/white"
     android:padding="20dp">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- Greeting Text -->
+        <!-- Welcome / Greeting -->
         <TextView
             android:id="@+id/GreetingText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="👋 Welcome, user"
+            android:text="Welcome, User"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="16dp"/>
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <!-- Button Row -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnRefreshData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:layout_marginEnd="14dp"/>
+
+            <Button
+                android:id="@+id/btnClearData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear Data"
+                android:layout_marginEnd="14dp"/>
+
+            <Button
+                android:id="@+id/btnOpenQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:layout_marginEnd="14dp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnPersonalization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalization"
+            android:layout_marginTop="8dp" />
 
         <!-- Stats Section -->
         <TextView
             android:id="@+id/textStats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Loading stats..."
+            android:text="User statistics will be shown here."
             android:textSize="16sp"
-            android:padding="12dp"
-            android:background="#ECECEC"
+            android:background="#F1F5FB"
+            android:padding="14dp"
             android:layout_marginBottom="16dp"
-            android:minHeight="60dp"/>
+            android:textColor="#222222"/>
 
-        <!-- Personalized Experiences -->
+        <!-- Personalisation Scores Section -->
         <TextView
-            android:id="@+id/personalizedExpText"
+            android:id="@+id/textScores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Personalized experience appears here."
+            android:text="Personalisation scores will be shown here."
             android:textSize="16sp"
-            android:padding="12dp"
-            android:background="#F0FFF0"
+            android:background="#E0F7FA"
+            android:padding="14dp"
             android:layout_marginBottom="16dp"
-            android:minHeight="80dp"/>
+            android:textColor="#1C435A"/>
 
-        <!-- Action Buttons -->
-        <LinearLayout
+        <!-- Personalised Tips Section -->
+        <TextView
+            android:id="@+id/textTips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:text="Personalised Tips will appear here."
+            android:textSize="16sp"
+            android:background="#FFF8E1"
+            android:padding="14dp"
+            android:textColor="#B8860B"/>
 
-            <Button
-                android:id="@+id/btnRefreshData"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Refresh Data"
-                android:layout_marginEnd="8dp" />
-
-            <Button
-                android:id="@+id/btnClearData"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Clear Data"
-                android:layout_marginEnd="8dp"/>
-
-            <Button
-                android:id="@+id/btnOpenQuiz"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Open Quiz"
-                android:onClick="openQuiz" />
-        </LinearLayout>
-
-        <!-- Add extra spacing -->
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
-
-        <!-- Button for user input (optional) -->
-        <Button
-            android:id="@+id/btnUserInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter User Data"
-            android:onClick="buttonInput" />
     </LinearLayout>
 </ScrollView>
