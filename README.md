@@ -143,9 +143,6 @@ Within the PLI, two challenges are addressed:
 ## Video
 **Screen recording of the process (placeholder).** 
 
-Add a link or GIF once available. 
-
-
 ## Getting Started
 
 1. **Clone & open** in Android Studio (Giraffe+). 
@@ -157,5 +154,4 @@ Add a link or GIF once available.
 ## Further Information
 
 - TensorFlow Lite guide — https://www.tensorflow.org/lite/guide 
-- Netron (inspect model signatures) — https://netron.app/ 
 - Android ML docs — https://developer.android.com/jetpack/androidx/releases/ml 
