@@ -1,4 +1,4 @@
-# Analysis, Modeling and Design of Personalized Digital Learning Environment: A Proof of Concept
+# Analysis, Modeling and Design of Personalized Digital Learning Environment: On-device Android Implementation
 
 This research analyzes, models and develops a novel Android-based Digital Learning Environment (DLE) powered by a Private Learning Intelligence (PLI) framework. 
 
